@@ -1,2 +1,2 @@
-# greyos
-My custom arch linux post install script
+# Grey OS
+An Arch Linux post install script intended for my personal use.
