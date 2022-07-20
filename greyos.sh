@@ -14,6 +14,23 @@ echo "************************"
 sleep 5
 sudo pacman -S zsh
 
+# Moving Dot Files and Other Directories
+echo "******************************"
+echo "*****Installing Dot Files*****"
+echo "******************************"
+sleep 5
+mv ascii/ ~
+mv wallpapers/ ~
+mv gifs/ ~
+mv .bashrc ~
+mv .zshrc ~
+mv .config/ ~
+mv .themes/ ~
+mv .icons/ ~
+mv .sounds/ ~
+mv .local/ ~
+sudo mv sddm/ /usr/share
+
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
 echo "*****Installing Window Manager and Basic GUI Tools*****"
@@ -26,7 +43,7 @@ echo "**************************************"
 echo "*****Installing Back End Programs*****"
 echo "**************************************"
 sleep 5
-paru -S picom-jonaburg-git sddm fprint brightnessctl volumectl xfce4-power-manager libinput-gestures gestures dunst artha xss-lock flatpak xrootgif polkit-gnome oh-my-zsh-git vim starship rofi
+paru -S picom-jonaburg-git sddm ani-cli fprint brightnessctl volumectl xfce4-power-manager libinput-gestures gestures dunst artha xss-lock flatpak xrootgif polkit-gnome oh-my-zsh-git vim starship rofi
 
 # Install Extra Programs
 echo "*********************************"
@@ -42,14 +59,24 @@ echo "***********************************"
 sleep 5
 paru -S xfce4-docklike-plugin vala-panel-appmenu appmenu-gtk-module-git xarchiver thunar-archive-plugin
 
-echo "******************************"
-echo "*****Installing Dot Files*****"
-echo "******************************"
-sleep 5
-
-
+# Enabaling ZSH Shell
 echo "***********************"
 echo "*****Enabaling ZSH*****"
 echo "***********************"
 sleep 5
 chsh -s /usr/bin/zsh
+
+# Reboot Prompt
+echo "**************************"
+echo "*****Install Complete*****"
+echo "**************************"
+sleep 5
+while true; do
+    read -p "Do you want to reboot? [Y/n] " yn
+    case $yn in
+        [Yy]* ) reboot;;
+        [Nn]* ) break;;
+        "" ) reboot;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
