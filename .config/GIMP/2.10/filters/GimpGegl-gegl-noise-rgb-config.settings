@@ -1,0 +1,37 @@
+# settings
+
+(GimpGegl-gegl-noise-rgb-config "2022-02-08 04:32:12"
+    (time 1644312732)
+    (correlated no)
+    (independent yes)
+    (linear yes)
+    (gaussian yes)
+    (red 0.070999999999999994)
+    (green 0.053999999999999999)
+    (blue 0.20000000000000001)
+    (alpha 0)
+    (seed 0))
+(GimpGegl-gegl-noise-rgb-config "2022-02-08 04:27:05"
+    (time 1644312425)
+    (correlated no)
+    (independent yes)
+    (linear yes)
+    (gaussian yes)
+    (red 0.088999999999999996)
+    (green 0.042000000000000003)
+    (blue 0.20000000000000001)
+    (alpha 0)
+    (seed 0))
+(GimpGegl-gegl-noise-rgb-config "2022-02-08 04:11:11"
+    (time 1644311471)
+    (correlated no)
+    (independent yes)
+    (linear yes)
+    (gaussian yes)
+    (red 0.070999999999999994)
+    (green 0.080000000000000002)
+    (blue 0.098000000000000004)
+    (alpha 0)
+    (seed 0))
+
+# end of settings

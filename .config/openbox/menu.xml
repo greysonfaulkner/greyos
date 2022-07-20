@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<menu id="40" label="OpenBox Settings">
+			<menu id="40-02815" label="Configs">
+				<item label="Main Config">
+					<action name="Execute">
+						<execute>alacritty -e vim .config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="Autostart">
+					<action name="Execute">
+						<execute>alacritty -e vim .config/openbox/autostart</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="client-list-menu"/>
+			<separator/>
+			<item label="Menu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<separator/>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+		<menu id="root-menu-155525" label="GUI Tools">
+			<item label="Panel">
+				<action name="Execute">
+					<execute>vala-panel</execute>
+				</action>
+			</item>
+			<item label="Dock">
+				<action name="Execute">
+					<execute>plank</execute>
+				</action>
+			</item>
+			<item label="Notifications">
+				<action name="Execute">
+					<execute>dunst -config /home/greyson/.config/dunst/dunstrc-openbox</execute>
+				</action>
+			</item>
+			<item label="Taskbar">
+				<action name="Execute">
+					<execute>xfce4-panel</execute>
+				</action>
+			</item>
+			<item label="Compositor">
+				<action name="Execute">
+					<execute> picom --config /home/greyson/.config/picom/picom-no-corners.conf</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Theme">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item label="GTK Theme">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item label="Wallpaper">
+			<action name="Execute">
+				<execute>nitrogen</execute>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>alacritty</execute>
+			</action>
+		</item>
+		<item label="Files">
+			<action name="Execute">
+				<execute>nautilus</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Lockscreen">
+			<action name="Execute">
+				<execute>betterlockscreen -l dim -- --time-str=&quot;%H:%M&quot;</execute>
+			</action>
+		</item>
+		<item label="Power Options">
+			<action name="Execute">
+				<execute>archlinux-logout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

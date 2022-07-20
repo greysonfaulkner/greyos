@@ -1,0 +1,25 @@
+# Startup Sound
+mpv --no-video ~/.sounds/startup.flac &
+
+# Desktop Applications
+#xrootgif --daemon ~/gifs/spring.gif &
+nitrogen --restore &
+#plank &
+#vala-panel &
+xfce4-panel &
+
+# Back End Programs
+picom --config ~/.config/picom/picom-no-corners.conf &
+xfce4-power-manager &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+libinput-gestures &
+dunst -config ~/.config/dunst/dunstrc-openbox &
+artha &
+xss-lock -- betterlockscreen -l dim -- --time-str="%H:%M" &
+
+# System Tray
+nm-applet &
+flameshot &
+blueberry-tray &
+cbatticon &
+volumeicon &

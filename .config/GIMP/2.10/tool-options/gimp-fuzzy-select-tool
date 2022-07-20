@@ -1,0 +1,8 @@
+# GIMP gimp-fuzzy-select-tool options
+
+(antialias no)
+(select-transparent no)
+(diagonal-neighbors yes)
+(threshold 85)
+
+# end of gimp-fuzzy-select-tool options
