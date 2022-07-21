@@ -39,7 +39,9 @@ echo "*****Creating Directories*****"
 echo "******************************"
 sleep 1
 sudo pacman -S xdg-user-dirs
-xdg-user-dirs
+cd ~
+xdg-user-dirs-update
+cd ~/greyos
 
 # Install Fonts and Themes
 echo "*************************************"
@@ -102,6 +104,8 @@ paru -S xss-lock
 paru -S xrootgif
 paru -S polkit-gnome
 paru -S kvantum
+paru -S mutimarkdown
+paru -S cmatrix
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
