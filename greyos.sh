@@ -58,7 +58,7 @@ echo "**************************************"
 echo "*****Installing Back End Programs*****"
 echo "**************************************"
 sleep 1
-sudo pacman -S bluez bluez-util ssddm flatpak vim starship rofi neofetch
+sudo pacman -S bluez bluez-util ssddm flatpak vim starship rofi neofetch lsd
 paru -S picom-jonaburg-git ani-cli fprint brightnessctl volumectl xfce4-power-manager libinput-gestures gestures dunst artha xss-lock xrootgif polkit-gnome oh-my-zsh-git   
 
 # Install Openbox and Basic Gui Tools
