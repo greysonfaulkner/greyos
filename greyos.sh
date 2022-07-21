@@ -91,8 +91,7 @@ sudo pacman -S rofi
 sudo pacman -S neofetch
 sudo pacman -S lsd
 sudo pacman -S htop
-paru -S picom
-paru -S bluez-util
+paru -S picom-jonaburg-git
 paru -S ani-cli
 paru -S fprint
 paru -S brightnessctl
@@ -119,13 +118,13 @@ sudo pacman -S obconf
 sudo pacman -S nitrogen
 sudo pacman -S lxappearance
 sudo pacman -S plank
+sudo pacman -S network-manager-applet
+sudo pacman -S blueberry
 paru -S obmenu
-paru -S nm-applet
 paru -S vala-panel
 paru -S xfce4-panel
 paru -S arcolinux-betterlockscreen
 paru -S arcolinux-logout
-paru -S blueberry-tray
 paru -S cbatticon
 paru -S volumeicon
 
@@ -136,7 +135,7 @@ echo "*********************************"
 sleep 1
 sudo pacman -S libreoffice-fresh
 paru -S google-chrome
-paru -S cozy
+paru -S cozy-audiobooks
 paru -S ghostwriter
 paru -S spotify
 paru -S foliate
@@ -182,9 +181,10 @@ sleep 1
 cd ~
 git clone https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
 cd vala-panel-appmenu
-meson -Dxfce=enabled -Dvalapanel=enabled
+meson -Dxfce=enabled -Dvalapanel=enabled ~/vala-panel-appmenu
 ninja && sudo ninja install
 cd ~/greyos
+paru -S vala-panel-applets-xembed-git
 
 # Enabaling ZSH Shell
 echo "***********************"
@@ -203,6 +203,7 @@ sleep 1
 sudo pacman -S sddm
 sudo systemctl enable sddm
 sudo mv sddm.conf /etc
+sudo rm -rf /usr/share/sddm
 sudo mv sddm/ /usr/share
 
 # Reboot Prompt
