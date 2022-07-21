@@ -38,18 +38,42 @@ echo "******************************"
 echo "*****Creating Directories*****"
 echo "******************************"
 sleep 1
-mkdir ~/Documents
-mkdir ~/Videos
-mkdir ~/Music
-mkdir ~/Downloads
-mkdir ~/Pictures
+sudo pacman -S xdg-user-dirs
+xdg-user-dirs
 
 # Install Fonts and Themes
 echo "*************************************"
 echo "*****Installing Fonts and Themes*****"
 echo "*************************************"
 sleep 1
-sudo pacman -S adapta-gtk-theme adobe-source-code-pro-fonts adobe-source-sans-fonts arc-gtk-theme arc-icon-theme ttf-hack ttf-jetbrains-mono ttf-joypixels ttf-ms-fonts ttf-ubuntu-font-family gnu-free-fonts noto-fonts ttf-nerd-fonts-symbols
+sudo pacman -S adapta-gtk-theme
+sudo pacman -S adobe-source-code-pro-fonts
+sudo pacman -S adobe-source-sans-fonts
+sudo pacman -S arc-gtk-theme
+sudo pacman -S arc-icon-theme
+sudo pacman -S papirus-icon-theme
+paru -S ttf-hack
+sudo pacman -S ttf-jetbrains-mono
+sudo pacman -S ttf-joypixels
+paru -S ttf-ms-fonts
+sudo pacman -S ttf-ubuntu-font-family
+sudo pacman -S gnu-free-fonts
+sudo pacman -S noto-fonts
+sudo pacman -S ttf-nerd-fonts-symbols
+sudo pacman -S ttf-caladea
+sudo pacman -S ttf-carlito
+sudo pacman -S ttf-dejavu
+paru -S ttf-impallari-cantora
+sudo pacman -S ttf-liberation
+sudo pacman -S ttf-opensans
+sudo pacman -S otf-overpass
+sudo pacman -S ttf-roboto
+sudo pacman -S tex-gyre-fonts
+paru -S ttf-courier-prime
+paru -S ttf-gelasio-ib
+paru -S ttf-merriweather
+paru -S ttf-source-sans-pro-ibx
+paru -S ttf-signika
 
 # Install Back End Programs
 echo "**************************************"
@@ -63,7 +87,7 @@ sudo pacman -S starship
 sudo pacman -S rofi
 sudo pacman -S neofetch
 sudo pacman -S lsd
-paru -S picom-jonaburg-git
+paru -S picom
 paru -S bluez-util
 paru -S ani-cli
 paru -S fprint
@@ -77,6 +101,7 @@ paru -S artha
 paru -S xss-lock
 paru -S xrootgif
 paru -S polkit-gnome
+paru -S kvantum
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
@@ -105,6 +130,7 @@ echo "*********************************"
 sleep 1
 sudo pacman -S libreoffice-fresh
 paru -S google-chrome
+paru -S cozy
 paru -S ghostwriter
 paru -S spotify
 paru -S foliate
@@ -112,7 +138,7 @@ paru -S smplayer
 paru -S audacity
 paru -S gimp
 paru -S kdenlive
-paru -S obs
+paru -S obs-studio
 paru -S discord
 paru -S steam
 paru -S firefox
@@ -121,7 +147,6 @@ paru -S manuskirpt
 paru -S stacer
 paru -S notepadqq
 paru -S alacritty
-paru -S kitty
 paru -S qbittorrent
 paru -S okular
 paru -S xterm
@@ -145,17 +170,23 @@ paru -S xarchiver thunar-archive-plugin xfce4-docklike-plugin
 
 # Install Global Appmenu
 echo "***********************************"
-echo "*****Installing Extra Programs*****"
+echo "*****Installing Global Appmenu*****"
 echo "***********************************"
 sleep 1
+cd ~
+git clone https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
+cd vala-panel-appmenu
+meson -Dxfce=enabled -Dvalapanel=enabled
+ninja && sudo ninja install
+cd ~/greyos
 
 # Enabaling ZSH Shell
 echo "***********************"
 echo "*****Enabaling ZSH*****"
 echo "***********************"
 sleep 1
-sudo pacman -S oh-my-zsh-git
-sudo pacman -S zsh-syntax-highlighting
+paru -S oh-my-zsh-git
+paru -S zsh-syntax-highlighting
 chsh -s /usr/bin/zsh
 
 # Enabaling SDDM
@@ -164,7 +195,6 @@ echo "*****Enabaling SDDM*****"
 echo "************************"
 sleep 1
 sudo pacman -S sddm
-sudo mv sddm/ /usr/share
 sudo systemctl enable sddm
 
 # Reboot Prompt

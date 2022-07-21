@@ -87,5 +87,5 @@ sleep 0.1
         fi
         LUM_STR="$LUM"
 
-~/.config/openbox/notify-send.sh --replace=555 --icon=~/.icons/TokyoNight/apps/symbolic/display-brightness-symbolic.svg "Brightness" $LUM_STR
+~/.config/openbox/notify-send.sh --replace=555 --icon= /home/greyson/.icons/TokyoNight/apps/symbolic/display-brightness-symbolic.svg "Brightness" $LUM_STR
 
