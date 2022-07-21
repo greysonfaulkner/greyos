@@ -17,6 +17,16 @@ echo "************************"
 sleep 1
 sudo pacman -S zsh
 
+# Creating Directories
+echo "******************************"
+echo "*****Creating Directories*****"
+echo "******************************"
+sleep 1
+sudo pacman -S xdg-user-dirs
+cd ~
+xdg-user-dirs-update
+cd ~/greyos
+
 # Moving Dot Files and Other Directories
 echo "******************************"
 echo "*****Installing Dot Files*****"
@@ -32,16 +42,6 @@ mv .themes/ ~
 mv .icons/ ~
 mv .sounds/ ~
 mv .local/ ~
-
-# Creating Directories
-echo "******************************"
-echo "*****Creating Directories*****"
-echo "******************************"
-sleep 1
-sudo pacman -S xdg-user-dirs
-cd ~
-xdg-user-dirs-update
-cd ~/greyos
 
 # Install Fonts and Themes
 echo "*************************************"
@@ -76,6 +76,7 @@ paru -S ttf-gelasio-ib
 paru -S ttf-merriweather
 paru -S ttf-source-sans-pro-ibx
 paru -S ttf-signika
+paru -S bibata-cursor-theme
 
 # Install Back End Programs
 echo "**************************************"
@@ -89,6 +90,7 @@ sudo pacman -S starship
 sudo pacman -S rofi
 sudo pacman -S neofetch
 sudo pacman -S lsd
+sudo pacman -S htop
 paru -S picom
 paru -S bluez-util
 paru -S ani-cli
@@ -200,6 +202,8 @@ echo "************************"
 sleep 1
 sudo pacman -S sddm
 sudo systemctl enable sddm
+sudo mv sddm.conf /etc
+sudo mv sddm/ /usr/share
 
 # Reboot Prompt
 echo "**************************"
