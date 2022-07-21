@@ -52,7 +52,7 @@
 			</item>
 			<item label="Compositor">
 				<action name="Execute">
-					<execute> picom --config /home/greyson/.config/picom/picom-no-corners.conf</execute>
+					<execute> picom</execute>
 				</action>
 			</item>
 		</menu>
@@ -79,13 +79,13 @@
 		</item>
 		<item label="Files">
 			<action name="Execute">
-				<execute>nautilus</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<separator/>
 		<item label="Lockscreen">
 			<action name="Execute">
-				<execute>betterlockscreen -l dim -- --time-str=&quot;%H:%M&quot;</execute>
+				<execute>betterlockscreen -l dim -- --time-str=&quot;%l:%M %p&quot;</execute>
 			</action>
 		</item>
 		<item label="Power Options">
