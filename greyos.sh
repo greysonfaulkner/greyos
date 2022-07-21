@@ -5,7 +5,6 @@ echo "*******************************"
 echo "*****Installing AUR Helper*****"
 echo "*******************************"
 sleep 1
-sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
@@ -33,7 +32,6 @@ mv .themes/ ~
 mv .icons/ ~
 mv .sounds/ ~
 mv .local/ ~
-sudo mv sddm/ /usr/share
 
 # Creating Directories
 echo "******************************"
@@ -51,43 +49,113 @@ echo "*************************************"
 echo "*****Installing Fonts and Themes*****"
 echo "*************************************"
 sleep 1
-sudo pacman -S adapta-gtk-theme adobe-source-code-pro-fonts adobe-source-sans-fonts arc-gtk-theme arc-icon-theme ttf-hack ttf-jetbrains-mono ttf-joypixels ttf-ms-fonts ttf-ubuntu-font-family gnu-free-fonts noto-fonts
+sudo pacman -S adapta-gtk-theme adobe-source-code-pro-fonts adobe-source-sans-fonts arc-gtk-theme arc-icon-theme ttf-hack ttf-jetbrains-mono ttf-joypixels ttf-ms-fonts ttf-ubuntu-font-family gnu-free-fonts noto-fonts ttf-nerd-fonts-symbols
 
 # Install Back End Programs
 echo "**************************************"
 echo "*****Installing Back End Programs*****"
 echo "**************************************"
 sleep 1
-sudo pacman -S bluez bluez-util ssddm flatpak vim starship rofi neofetch lsd
-paru -S picom-jonaburg-git ani-cli fprint brightnessctl volumectl xfce4-power-manager libinput-gestures gestures dunst artha xss-lock xrootgif polkit-gnome oh-my-zsh-git   
+sudo pacman -S bluez
+sudo pacman -S flatpak
+sudo pacman -S vim
+sudo pacman -S starship
+sudo pacman -S rofi
+sudo pacman -S neofetch
+sudo pacman -S lsd
+paru -S picom-jonaburg-git
+paru -S bluez-util
+paru -S ani-cli
+paru -S fprint
+paru -S brightnessctl
+paru -S volumectl
+paru -S xfce4-power-manager
+paru -S libinput-gestures
+paru -S gestures
+paru -S dunst
+paru -S artha
+paru -S xss-lock
+paru -S xrootgif
+paru -S polkit-gnome
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
 echo "*****Installing Window Manager and Basic GUI Tools*****"
 echo "*******************************************************"
 sleep 1
-sudo pacman -S openbox obconf nitrogen lxappearance plank
-paru -S obmenu nm-applet vala-panel xfce4-panel arohlinux-betterlockscreen arcolinux-logout blueberry-tray cbatticon volumeicon
+sudo pacman -S openbox
+sudo pacman -S obconf
+sudo pacman -S nitrogen
+sudo pacman -S lxappearance
+sudo pacman -S plank
+paru -S obmenu
+paru -S nm-applet
+paru -S vala-panel
+paru -S xfce4-panel
+paru -S arcolinux-betterlockscreen
+paru -S arcolinux-logout
+paru -S blueberry-tray
+paru -S cbatticon
+paru -S volumeicon
 
 # Install Extra Programs
 echo "*********************************"
 echo "*****Installing GUI Programs*****"
 echo "*********************************"
 sleep 1
-paru -S google-chrome-stable ghostwriter spotify foliate smplayer audacity gimp kdenlive obs discord steam firefox mailspring manuskirpt libre-office stacer notepadqq alacritty kitty qbittorrent okular xterm deadbeef vlc mpv flameshot ranger feh ristretto inkscape mcomix thunar
+sudo pacman -S libreoffice-fresh
+paru -S google-chrome
+paru -S ghostwriter
+paru -S spotify
+paru -S foliate
+paru -S smplayer
+paru -S audacity
+paru -S gimp
+paru -S kdenlive
+paru -S obs
+paru -S discord
+paru -S steam
+paru -S firefox
+paru -S mailspring
+paru -S manuskirpt
+paru -S stacer
+paru -S notepadqq
+paru -S alacritty
+paru -S kitty
+paru -S qbittorrent
+paru -S okular
+paru -S xterm
+paru -S deadbeef
+paru -S vlc
+paru -S mpv
+paru -S flameshot
+paru -S ranger
+paru -S feh
+paru -S ristretto
+paru -S inkscape
+paru -S mcomix
+paru -S thunar
 
 # Install Extra Programs
 echo "***********************************"
 echo "*****Installing Extra Programs*****"
 echo "***********************************"
 sleep 1
-paru -S xfce4-docklike-plugin vala-panel-appmenu appmenu-gtk-module-git xarchiver thunar-archive-plugin
+paru -S xarchiver thunar-archive-plugin xfce4-docklike-plugin
+
+# Install Global Appmenu
+echo "***********************************"
+echo "*****Installing Extra Programs*****"
+echo "***********************************"
+sleep 1
 
 # Enabaling ZSH Shell
 echo "***********************"
 echo "*****Enabaling ZSH*****"
 echo "***********************"
 sleep 1
+sudo pacman -S oh-my-zsh-git
+sudo pacman -S zsh-syntax-highlighting
 chsh -s /usr/bin/zsh
 
 # Enabaling SDDM
@@ -95,6 +163,8 @@ echo "************************"
 echo "*****Enabaling SDDM*****"
 echo "************************"
 sleep 1
+sudo pacman -S sddm
+sudo mv sddm/ /usr/share
 sudo systemctl enable sddm
 
 # Reboot Prompt
