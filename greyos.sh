@@ -37,6 +37,7 @@ mv wallpapers/ ~
 mv gifs/ ~
 mv .bashrc ~
 mv .zshrc ~
+rm -rf ~/.config
 mv .config/ ~
 mv .themes/ ~
 mv .icons/ ~
