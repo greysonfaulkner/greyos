@@ -32,24 +32,6 @@ cd ~
 xdg-user-dirs-update
 cd ~/greyos
 
-# Moving Dot Files and Other Directories
-echo "******************************"
-echo "*****Installing Dot Files*****"
-echo "******************************"
-sleep 1
-mv ascii/ ~
-mv wallpapers/ ~
-mv gifs/ ~
-mv .bashrc ~
-mv .zshrc ~
-rm -rf ~/.config
-mv .config/ ~
-mv .themes/ ~
-mv .icons/ ~
-mv .sounds/ ~
-mv .local/ ~
-mv .xinitrc ~
-
 # Install Fonts and Themes
 echo "*************************************"
 echo "*****Installing Fonts and Themes*****"
@@ -216,6 +198,25 @@ sudo mv sddm.conf /etc
 sudo rm -rf /usr/share/sddm
 sudo mv sddm/ /usr/share
 
+# Moving Dot Files and Other Directories
+echo "******************************"
+echo "*****Installing Dot Files*****"
+echo "******************************"
+sleep 1
+mv ascii/ ~
+mv wallpapers/ ~
+mv gifs/ ~
+mv .bashrc ~
+mv .zshrc ~
+rm -rf ~/.config
+mv .config/ ~
+mv .themes/ ~
+mv .icons/ ~
+mv .sounds/ ~
+mv .local/ ~
+mv .xinitrc ~
+sudo rm -rf /usr/share/smplayer
+sudo mv smplayer/ /usr/share
 
 # Clean Up
 echo "***************************"
