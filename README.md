@@ -6,6 +6,7 @@ Xorg
 Git
 
 **Install Instructions**
-git clone https://github.com/greysonfaulkner/greyos.git
-cd greyos
-./greyos.sh
+```
+$ git clone https://github.com/greysonfaulkner/greyos.git
+$ cd greyos
+$ ./greyos.sh
