@@ -40,11 +40,6 @@
 					<execute>~/.config/openbox/taskbar.sh</execute>
 				</action>
 			</item>
-			<item label="Notifications">
-				<action name="Execute">
-					<execute>dunst -config ~/.config/dunst/dunstrc-openbox</execute>
-				</action>
-			</item>
 			<item label="Compositor">
 				<action name="Execute">
 					<execute>picom --config ~/.config/picom/picom-no-corners.conf</execute>
