@@ -30,29 +30,24 @@
 			</item>
 		</menu>
 		<menu id="root-menu-155525" label="GUI Tools">
-			<item label="Panel">
-				<action name="Execute">
-					<execute>vala-panel</execute>
-				</action>
-			</item>
 			<item label="Dock">
 				<action name="Execute">
-					<execute>plank</execute>
-				</action>
-			</item>
-			<item label="Notifications">
-				<action name="Execute">
-					<execute>dunst -config /home/greyson/.config/dunst/dunstrc-openbox</execute>
+					<execute>~/.config/openbox/dock.sh</execute>
 				</action>
 			</item>
 			<item label="Taskbar">
 				<action name="Execute">
-					<execute>xfce4-panel</execute>
+					<execute>~/.config/openbox/taskbar.sh</execute>
+				</action>
+			</item>
+			<item label="Notifications">
+				<action name="Execute">
+					<execute>dunst -config ~/.config/dunst/dunstrc-openbox</execute>
 				</action>
 			</item>
 			<item label="Compositor">
 				<action name="Execute">
-					<execute> picom</execute>
+					<execute>picom --config ~/.config/picom/picom-no-corners.conf</execute>
 				</action>
 			</item>
 		</menu>
@@ -79,13 +74,13 @@
 		</item>
 		<item label="Files">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>nautilus</execute>
 			</action>
 		</item>
 		<separator/>
 		<item label="Lockscreen">
 			<action name="Execute">
-				<execute>betterlockscreen -l dim -- --time-str=&quot;%l:%M %p&quot;</execute>
+				<execute>betterlockscreen -l dim -- --time-str=&quot;%H:%M&quot;</execute>
 			</action>
 		</item>
 		<item label="Power Options">
