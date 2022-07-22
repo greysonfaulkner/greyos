@@ -48,6 +48,7 @@ mv .themes/ ~
 mv .icons/ ~
 mv .sounds/ ~
 mv .local/ ~
+mv .xinitrc ~
 
 # Install Fonts and Themes
 echo "*************************************"
