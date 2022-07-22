@@ -20,14 +20,14 @@ echo "************************"
 echo "*****Installing ZSH*****"
 echo "************************"
 sleep 1
-sudo pacman -S zsh
+sudo pacman -S --noconfirm zsh
 
 # Creating Directories
 echo "******************************"
 echo "*****Creating Directories*****"
 echo "******************************"
 sleep 1
-sudo pacman -S xdg-user-dirs
+sudo pacman -S --noconfirm xdg-user-dirs
 cd ~
 xdg-user-dirs-update
 cd ~/greyos
@@ -54,130 +54,130 @@ echo "*************************************"
 echo "*****Installing Fonts and Themes*****"
 echo "*************************************"
 sleep 1
-sudo pacman -S adapta-gtk-theme
-sudo pacman -S adobe-source-code-pro-fonts
-sudo pacman -S adobe-source-sans-fonts
-sudo pacman -S arc-gtk-theme
-sudo pacman -S arc-icon-theme
-sudo pacman -S papirus-icon-theme
-sudo pacman -S ttf-jetbrains-mono
-sudo pacman -S ttf-joypixels
-sudo pacman -S ttf-ubuntu-font-family
-sudo pacman -S gnu-free-fonts
-sudo pacman -S noto-fonts
-sudo pacman -S ttf-nerd-fonts-symbols
-sudo pacman -S ttf-caladea
-sudo pacman -S ttf-carlito
-sudo pacman -S ttf-dejavu
-sudo pacman -S ttf-liberation
-sudo pacman -S ttf-opensans
-sudo pacman -S otf-overpass
-sudo pacman -S ttf-roboto
-sudo pacman -S tex-gyre-fonts
-paru -S ttf-courier-prime
-paru -S ttf-hack
-paru -S ttf-gelasio-ib
-paru -S ttf-merriweather
-paru -S ttf-source-sans-pro-ibx
-paru -S ttf-signika
-paru -S bibata-cursor-theme
-paru -S ttf-ms-fonts
-paru -S ttf-impallari-cantora
+sudo pacman -S --noconfirm adapta-gtk-theme
+sudo pacman -S --noconfirm adobe-source-code-pro-fonts
+sudo pacman -S --noconfirm adobe-source-sans-fonts
+sudo pacman -S --noconfirm arc-gtk-theme
+sudo pacman -S --noconfirm arc-icon-theme
+sudo pacman -S --noconfirm papirus-icon-theme
+sudo pacman -S --noconfirm ttf-jetbrains-mono
+sudo pacman -S --noconfirm ttf-joypixels
+sudo pacman -S --noconfirm ttf-ubuntu-font-family
+sudo pacman -S --noconfirm gnu-free-fonts
+sudo pacman -S --noconfirm noto-fonts
+sudo pacman -S --noconfirm ttf-nerd-fonts-symbols
+sudo pacman -S --noconfirm ttf-caladea
+sudo pacman -S --noconfirm ttf-carlito
+sudo pacman -S --noconfirm ttf-dejavu
+sudo pacman -S --noconfirm ttf-liberation
+sudo pacman -S --noconfirm ttf-opensans
+sudo pacman -S --noconfirm otf-overpass
+sudo pacman -S --noconfirm ttf-roboto
+sudo pacman -S --noconfirm tex-gyre-fonts
+paru -S --noconfirm ttf-courier-prime
+paru -S --noconfirm ttf-hack
+paru -S --noconfirm ttf-gelasio-ib
+paru -S --noconfirm ttf-merriweather
+paru -S --noconfirm ttf-source-sans-pro-ibx
+paru -S --noconfirm ttf-signika
+paru -S --noconfirm bibata-cursor-theme
+paru -S --noconfirm ttf-ms-fonts
+paru -S --noconfirm ttf-impallari-cantora
 
 # Install Back End Programs
 echo "**************************************"
 echo "*****Installing Back End Programs*****"
 echo "**************************************"
 sleep 1
-sudo pacman -S bluez
-sudo pacman -S flatpak
-sudo pacman -S vim
-sudo pacman -S starship
-sudo pacman -S rofi
-sudo pacman -S neofetch
-sudo pacman -S lsd
-sudo pacman -S htop
-paru -S picom-jonaburg-git
-paru -S ani-cli
-paru -S fprint
-paru -S brightnessctl
-paru -S volumectl
-paru -S xfce4-power-manager
-paru -S libinput-gestures
-paru -S gestures
-paru -S dunst
-paru -S artha
-paru -S xss-lock
-paru -S xrootgif
-paru -S polkit-gnome
-paru -S kvantum
-paru -S mutimarkdown
-paru -S cmatrix
+sudo pacman -S --noconfirm bluez
+sudo pacman -S --noconfirm flatpak
+sudo pacman -S --noconfirm vim
+sudo pacman -S --noconfirm starship
+sudo pacman -S --noconfirm rofi
+sudo pacman -S --noconfirm neofetch
+sudo pacman -S --noconfirm lsd
+sudo pacman -S --noconfirm htop
+paru -S --noconfirm picom-jonaburg-git
+paru -S --noconfirm ani-cli
+paru -S --noconfirm fprint
+paru -S --noconfirm brightnessctl
+paru -S --noconfirm volumectl
+paru -S --noconfirm xfce4-power-manager
+paru -S --noconfirm libinput-gestures
+paru -S --noconfirm gestures
+paru -S --noconfirm dunst
+paru -S --noconfirm artha
+paru -S --noconfirm xss-lock
+paru -S --noconfirm xrootgif
+paru -S --noconfirm polkit-gnome
+paru -S --noconfirm kvantum
+paru -S --noconfirm mutimarkdown
+paru -S --noconfirm cmatrix
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
 echo "*****Installing Window Manager and Basic GUI Tools*****"
 echo "*******************************************************"
 sleep 1
-sudo pacman -S openbox
-sudo pacman -S obconf
-sudo pacman -S nitrogen
-sudo pacman -S lxappearance
-sudo pacman -S plank
-sudo pacman -S network-manager-applet
-sudo pacman -S blueberry
-paru -S obmenu
-paru -S vala-panel
-paru -S xfce4-panel
-paru -S arcolinux-betterlockscreen
-paru -S arcolinux-logout
-paru -S cbatticon
-paru -S volumeicon
+sudo pacman -S --noconfirm openbox
+sudo pacman -S --noconfirm obconf
+sudo pacman -S --noconfirm nitrogen
+sudo pacman -S --noconfirm lxappearance
+sudo pacman -S --noconfirm plank
+sudo pacman -S --noconfirm network-manager-applet
+sudo pacman -S --noconfirm blueberry
+paru -S --noconfirm obmenu
+paru -S --noconfirm vala-panel
+paru -S --noconfirm xfce4-panel
+paru -S --noconfirm arcolinux-betterlockscreen
+paru -S --noconfirm arcolinux-logout
+paru -S --noconfirm cbatticon
+paru -S --noconfirm volumeicon
 
 # Install Extra Programs
 echo "*********************************"
 echo "*****Installing GUI Programs*****"
 echo "*********************************"
 sleep 1
-sudo pacman -S libreoffice-fresh
-paru -S google-chrome
-paru -S cozy-audiobooks
-paru -S ghostwriter
-paru -S spotify
-paru -S foliate
-paru -S smplayer
-paru -S audacity
-paru -S gimp
-paru -S kdenlive
-paru -S obs-studio
-paru -S discord
-paru -S steam
-paru -S firefox
-paru -S mailspring
-paru -S manuskirpt
-paru -S stacer
-paru -S notepadqq
-paru -S alacritty
-paru -S qbittorrent
-paru -S okular
-paru -S xterm
-paru -S deadbeef
-paru -S vlc
-paru -S mpv
-paru -S flameshot
-paru -S ranger
-paru -S feh
-paru -S ristretto
-paru -S inkscape
-paru -S mcomix
-paru -S thunar
+sudo pacman -S --noconfirm libreoffice-fresh
+paru -S --noconfirm google-chrome
+paru -S --noconfirm cozy-audiobooks
+paru -S --noconfirm ghostwriter
+paru -S --noconfirm spotify
+paru -S --noconfirm foliate
+paru -S --noconfirm smplayer
+paru -S --noconfirm audacity
+paru -S --noconfirm gimp
+paru -S --noconfirm kdenlive
+paru -S --noconfirm obs-studio
+paru -S --noconfirm discord
+paru -S --noconfirm steam
+paru -S --noconfirm firefox
+paru -S --noconfirm mailspring
+paru -S --noconfirm manuskirpt
+paru -S --noconfirm stacer
+paru -S --noconfirm notepadqq
+paru -S --noconfirm alacritty
+paru -S --noconfirm qbittorrent
+paru -S --noconfirm okular
+paru -S --noconfirm xterm
+paru -S --noconfirm deadbeef
+paru -S --noconfirm vlc
+paru -S --noconfirm mpv
+paru -S --noconfirm flameshot
+paru -S --noconfirm ranger
+paru -S --noconfirm feh
+paru -S --noconfirm ristretto
+paru -S --noconfirm inkscape
+paru -S --noconfirm mcomix
+paru -S --noconfirm thunar
 
 # Install Extra Programs
 echo "***********************************"
 echo "*****Installing Extra Programs*****"
 echo "***********************************"
 sleep 1
-paru -S xarchiver thunar-archive-plugin xfce4-docklike-plugin
+paru -S --noconfirm xarchiver thunar-archive-plugin xfce4-docklike-plugin
 
 # Install Global Appmenu
 echo "***********************************"
@@ -187,18 +187,21 @@ sleep 1
 cd ~
 git clone https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
 cd vala-panel-appmenu
-meson -Dxfce=enabled -Dvalapanel=enabled ~/vala-panel-appmenu
+mkdir ~/vala-panel-appmenu/global
+meson -Dxfce=enabled -Dvalapanel=enabled ~/vala-panel-appmenu/global
+cd ~/vala-panel-appmenu/global
 ninja && sudo ninja install
 cd ~/greyos
-paru -S vala-panel-applets-xembed-git
+paru -S --noconfirm vala-panel-applets-xembed-git
+rm -rf ~/vala-panel-appmenu
 
 # Enabaling ZSH Shell
 echo "***********************"
 echo "*****Enabaling ZSH*****"
 echo "***********************"
 sleep 1
-paru -S oh-my-zsh-git
-paru -S zsh-syntax-highlighting
+paru -S --noconfirm oh-my-zsh-git
+paru -S --noconfirm zsh-syntax-highlighting
 chsh -s /usr/bin/zsh
 
 # Enabaling SDDM
@@ -206,7 +209,7 @@ echo "************************"
 echo "*****Enabaling SDDM*****"
 echo "************************"
 sleep 1
-sudo pacman -S sddm
+sudo pacman -S --noconfirm sddm
 sudo systemctl enable sddm
 sudo mv sddm.conf /etc
 sudo rm -rf /usr/share/sddm
