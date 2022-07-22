@@ -1,4 +1,9 @@
 #!/bin/bash
+# Arch Install Script
+#   ___ ___ _____   _____  ___  _  _   ___ _  _   _ _    _  ___  _ ___ ___
+#  / __| _ \ __\ \ / / __|/ _ \| \| | | __/_\| | | | |  | |/ / \| | __| _ \
+# | (_ |   / _| \ V /\__ \ (_) | .` | | _/ _ \ |_| | |__| ' <| .` | _||   /
+#  \___|_|_\___| |_| |___/\___/|_|\_| |_/_/ \_\___/|____|_|\_\_|\_|___|_|_\
 
 # Install Paru
 echo "*******************************"
@@ -55,10 +60,8 @@ sudo pacman -S adobe-source-sans-fonts
 sudo pacman -S arc-gtk-theme
 sudo pacman -S arc-icon-theme
 sudo pacman -S papirus-icon-theme
-paru -S ttf-hack
 sudo pacman -S ttf-jetbrains-mono
 sudo pacman -S ttf-joypixels
-paru -S ttf-ms-fonts
 sudo pacman -S ttf-ubuntu-font-family
 sudo pacman -S gnu-free-fonts
 sudo pacman -S noto-fonts
@@ -66,18 +69,20 @@ sudo pacman -S ttf-nerd-fonts-symbols
 sudo pacman -S ttf-caladea
 sudo pacman -S ttf-carlito
 sudo pacman -S ttf-dejavu
-paru -S ttf-impallari-cantora
 sudo pacman -S ttf-liberation
 sudo pacman -S ttf-opensans
 sudo pacman -S otf-overpass
 sudo pacman -S ttf-roboto
 sudo pacman -S tex-gyre-fonts
 paru -S ttf-courier-prime
+paru -S ttf-hack
 paru -S ttf-gelasio-ib
 paru -S ttf-merriweather
 paru -S ttf-source-sans-pro-ibx
 paru -S ttf-signika
 paru -S bibata-cursor-theme
+paru -S ttf-ms-fonts
+paru -S ttf-impallari-cantora
 
 # Install Back End Programs
 echo "**************************************"
