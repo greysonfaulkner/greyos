@@ -5,7 +5,7 @@ menu.overlap.x: -10
 
 !! menu text
 menu.items.text.color: #c0caf5
-menu.items.justify: left
+menu.items.justify: center
 menu.items.disabled.text.color: #4d5066
 
 !! menu separator
@@ -54,13 +54,13 @@ window.inactive.button.*.image.color: #1a1b26
 window.inactive.button.disabled.image.color: #1a1b26
 
 !! borders
-window.active.border.color: #1a1b26
+window.active.border.color: #82aaff
 window.inactive.border.color: #1a1b26
 padding.width: 1
 padding.height: 1
 window.client.padding.width: 0
 window.client.padding.height: 0
-border.width: 0
+border.width: 4
 window.handle.width: 0
 window.active.client.color:  #c0caf5
 window.inactive.client.color:  #c0caf5
