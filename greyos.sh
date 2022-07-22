@@ -215,6 +215,16 @@ sudo mv sddm.conf /etc
 sudo rm -rf /usr/share/sddm
 sudo mv sddm/ /usr/share
 
+
+# Clean Up
+echo "***************************"
+echo "*****Cleaning Up Files*****"
+echo "***************************"
+sleep 1
+sudo pacman -Qtdq | sudo pacman -Rns -
+cd ~
+rm -rf ~/greyos
+
 # Reboot Prompt
 echo "**************************"
 echo "*****Install Complete*****"
