@@ -23,7 +23,7 @@ libinput-gestures &
 
 nm-applet &
 
-dunst &
+dunst -config ~/.config/dunst/dunstrc-leftwm &
 
 #boot picom if it exists
 if [ -x "$(command -v picom)" ]; then

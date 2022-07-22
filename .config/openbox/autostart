@@ -4,8 +4,8 @@ mpv --no-video ~/.sounds/startup.flac &
 # Desktop Applications
 #xrootgif --daemon ~/gifs/spring.gif &
 nitrogen --restore &
-#~/.config/openbox/dock.sh
-~/.config/openbox/taskbar.sh
+~/.config/openbox/dock.sh
+#~/.config/openbox/taskbar.sh
 
 
 # Back End Programs
@@ -13,9 +13,10 @@ picom --config ~/.config/picom/picom-no-corners.conf &
 xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 libinput-gestures &
-dunst -config ~/.config/dunst/dunstrc-openbox &
 artha &
 xss-lock -- betterlockscreen -l dim -- --time-str="%H:%M" &
+#dunst -config ~/.config/dunst/dunstrc-taskbar &
+dunst -config ~/.config/dunst/dunstrc-dock &
 
 # System Tray
 nm-applet &

@@ -8,5 +8,5 @@ Git
 **Install Instructions**
 ```
 $ git clone https://github.com/greysonfaulkner/greyos.git
-$ cd greyos
+$ cd /greyos
 $ ./greyos.sh
