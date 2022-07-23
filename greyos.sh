@@ -203,6 +203,11 @@ echo "******************************"
 echo "*****Installing Dot Files*****"
 echo "******************************"
 sleep 1
+sudo cp -r .themes/tokyo-night-openbox /usr/share/themes
+sudo cp -r .themes/tokyo-night /usr/share/themes
+sudo rm -r ~/greyos/.themes
+sudo cp -r .icons/TokyoNight/ /usr/share/icons
+sudo rm -r ~/greyos/.icons
 mv ascii/ ~
 mv wallpapers/ ~
 mv gifs/ ~
@@ -210,8 +215,6 @@ mv .bashrc ~
 mv .zshrc ~
 rm -rf ~/.config
 mv .config/ ~
-mv .themes/ ~
-mv .icons/ ~
 mv .sounds/ ~
 mv .local/ ~
 mv .xinitrc ~
