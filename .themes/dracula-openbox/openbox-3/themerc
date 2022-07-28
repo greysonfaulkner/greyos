@@ -76,7 +76,7 @@ window.active.button.toggled.pressed.bg:              parentrelative
 window.active.button.toggled.pressed.image.color:     #BD93F9
 
 # Inactive window
-window.inactive.border.color:                         #FF79C6
+window.inactive.border.color:                         #282A36
 
 window.inactive.title.bg:                             flat solid
 window.inactive.title.bg.color:                       #282A36
@@ -165,9 +165,9 @@ menu.items.font:                     shadow=n
 menu.title.text.font:                shadow=n
 
 # Everything else
-border.width:                5
-padding.width:               15
-padding.height:              10
+border.width:                4
+padding.width:               0
+padding.height:              0
 window.handle.width:         0
 window.client.padding.width: 0
 window.label.text.justify:   center
