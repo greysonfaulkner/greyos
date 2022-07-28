@@ -57,6 +57,7 @@ sudo pacman -S --noconfirm ttf-opensans
 sudo pacman -S --noconfirm otf-overpass
 sudo pacman -S --noconfirm ttf-roboto
 sudo pacman -S --noconfirm tex-gyre-fonts
+paru -S --noconfirm dracula-gtk-theme
 paru -S --noconfirm ttf-courier-prime
 paru -S --noconfirm ttf-hack
 paru -S --noconfirm ttf-gelasio-ib
@@ -106,6 +107,7 @@ sudo pacman -S --noconfirm openbox
 sudo pacman -S --noconfirm obconf
 sudo pacman -S --noconfirm nitrogen
 sudo pacman -S --noconfirm lxappearance
+sudo pacman -S --noconfirm lxrandr
 sudo pacman -S --noconfirm plank
 sudo pacman -S --noconfirm network-manager-applet
 sudo pacman -S --noconfirm blueberry
@@ -205,7 +207,6 @@ echo "******************************"
 sleep 1
 sudo cp -r .themes/tokyo-night-openbox /usr/share/themes
 sudo cp -r .themes/tokyo-night /usr/share/themes
-sudo cp -r .themes/dracula-gtk /usr/share/themes
 sudo cp -r .themes/dracula-openbox /usr/share/themes
 sudo rm -rf ~/greyos/.themes
 sudo cp -r .icons/TokyoNight/ /usr/share/icons
