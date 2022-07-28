@@ -67,9 +67,9 @@
 				<execute>alacritty</execute>
 			</action>
 		</item>
-		<item label="Files">
+		<item label="File Manager">
 			<action name="Execute">
-				<execute>nautilus</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<separator/>

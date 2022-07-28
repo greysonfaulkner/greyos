@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>tokyo-night-openbox</name>
-    <titleLayout>LIMC</titleLayout>
+    <name>dracula-openbox</name>
+    <titleLayout>CMIL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -407,7 +407,7 @@
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>google-chrome-stable</command>
+        <command>brave</command>
       </action>
     </keybind>
     <keybind key="W-C-b">
@@ -505,8 +505,8 @@
       </action>
     </keybind>
     <keybind key="W-Tab">
-      <action name="ShowMenu">
-        <menu>client-list-combined-menu</menu>
+      <action name="Execute">
+        <command>rofi -show window</command>
       </action>
     </keybind>
   </keyboard>

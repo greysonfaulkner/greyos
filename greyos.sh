@@ -123,7 +123,7 @@ echo "*****Installing GUI Programs*****"
 echo "*********************************"
 sleep 1
 sudo pacman -S --noconfirm libreoffice-fresh
-paru -S --noconfirm google-chrome
+paru -S --noconfirm brave
 paru -S --noconfirm cozy-audiobooks
 paru -S --noconfirm ghostwriter
 paru -S --noconfirm spotify
@@ -205,9 +205,11 @@ echo "******************************"
 sleep 1
 sudo cp -r .themes/tokyo-night-openbox /usr/share/themes
 sudo cp -r .themes/tokyo-night /usr/share/themes
-sudo rm -r ~/greyos/.themes
+sudo cp -r .themes/dracula-gtk /usr/share/themes
+sudo cp -r .themes/dracula-openbox /usr/share/themes
+sudo rm -rf ~/greyos/.themes
 sudo cp -r .icons/TokyoNight/ /usr/share/icons
-sudo rm -r ~/greyos/.icons
+sudo rm -rf ~/greyos/.icons
 mv ascii/ ~
 mv wallpapers/ ~
 mv gifs/ ~

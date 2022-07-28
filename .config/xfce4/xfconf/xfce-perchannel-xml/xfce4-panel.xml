@@ -9,14 +9,24 @@
       <property name="position" type="string" value="p=8;x=960;y=1059"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="36"/>
+      <property name="size" type="uint" value="28"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="14"/>
         <value type="int" value="2"/>
-        <value type="int" value="4"/>
-        <value type="int" value="3"/>
         <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="15"/>
+        <value type="int" value="12"/>
+        <value type="int" value="16"/>
+        <value type="int" value="14"/>
+        <value type="int" value="13"/>
+        <value type="int" value="8"/>
+        <value type="int" value="6"/>
+        <value type="int" value="5"/>
+        <value type="int" value="9"/>
         <value type="int" value="17"/>
+        <value type="int" value="24"/>
+        <value type="int" value="7"/>
+        <value type="int" value="19"/>
         <value type="int" value="18"/>
       </property>
       <property name="background-alpha" type="uint" value="76"/>
@@ -24,37 +34,37 @@
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.003922"/>
-        <value type="double" value="0.086275"/>
-        <value type="double" value="0.152941"/>
-        <value type="double" value="0.700000"/>
+        <value type="double" value="0.156863"/>
+        <value type="double" value="0.164691"/>
+        <value type="double" value="0.211765"/>
+        <value type="double" value="1.000000"/>
       </property>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="mode" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="autohide-behavior" type="uint" value="0"/>
     </property>
-    <property name="dark-mode" type="bool" value="false"/>
+    <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-2" type="empty">
-      <property name="position" type="string" value="p=6;x=960;y=8"/>
-      <property name="size" type="uint" value="16"/>
+      <property name="position" type="string" value="p=6;x=960;y=9"/>
+      <property name="size" type="uint" value="18"/>
+      <property name="length-adjust" type="bool" value="false"/>
       <property name="length" type="uint" value="100"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="11"/>
-        <value type="int" value="12"/>
-        <value type="int" value="13"/>
-        <value type="int" value="8"/>
-      </property>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="position-locked" type="bool" value="true"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.003922"/>
-        <value type="double" value="0.086275"/>
-        <value type="double" value="0.152941"/>
-        <value type="double" value="0.700000"/>
+        <value type="double" value="0.156863"/>
+        <value type="double" value="0.164691"/>
+        <value type="double" value="0.211765"/>
+        <value type="double" value="1.000000"/>
       </property>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="disable-struts" type="bool" value="false"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="icon-size" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -63,71 +73,129 @@
         <property name="never-confirm-history-clear" type="bool" value="true"/>
       </property>
     </property>
-    <property name="plugin-2" type="string" value="docklike"/>
-    <property name="plugin-4" type="string" value="separator">
+    <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-9" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
-    </property>
-    <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-11" type="string" value="appmenu">
+    <property name="plugin-17" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (66%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (79%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (80%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (74%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (61%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (65%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (75%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (70%)"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (62%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (78%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (77%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (76%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (69%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (71%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (67%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (72%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (68%)"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (63%)"/>
+        <value type="string" value="volumeicon"/>
+        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (73%)"/>
+        <value type="string" value="cbatticon"/>
+        <value type="string" value="blueberry-tray.py"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="privateinternetaccess"/>
+      </property>
+    </property>
+    <property name="plugin-19" type="string" value="clock">
+      <property name="digital-format" type="string" value="%l:%M %p"/>
+    </property>
+    <property name="plugin-24" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16583884582.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-1" type="string" value="appmenu">
       <property name="plugins" type="empty">
-        <property name="plugin-11" type="empty">
+        <property name="plugin-1" type="empty">
           <property name="compact-mode" type="bool" value="false"/>
           <property name="bold-application-name" type="bool" value="true"/>
           <property name="expand" type="bool" value="false"/>
         </property>
       </property>
     </property>
-    <property name="plugin-12" type="string" value="separator">
+    <property name="plugin-3" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-13" type="string" value="pager">
+    <property name="plugin-4" type="string" value="pager">
       <property name="rows" type="uint" value="1"/>
       <property name="miniature-view" type="bool" value="false"/>
-      <property name="workspace-scrolling" type="bool" value="false"/>
     </property>
-    <property name="plugin-14" type="string" value="separator">
+    <property name="plugin-2" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588309251.desktop"/>
+      </property>
+      <property name="arrow-position" type="uint" value="3"/>
+    </property>
+    <property name="plugin-5" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="4"/>
+      <property name="grouping" type="uint" value="1"/>
+    </property>
+    <property name="plugin-6" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-3" type="string" value="systray">
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (69%)"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (70%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (68%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (65%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (67%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (72%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (73%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (74%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (63%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (71%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (75%)"/>
-        <value type="string" value="blueberry-tray.py"/>
-        <value type="string" value="volumeicon"/>
-        <value type="string" value="cbatticon"/>
-        <value type="string" value="wi-fi network connection “asus_58_2g” active: asus_58_2g (76%)"/>
-      </property>
-      <property name="known-items" type="array">
-        <value type="string" value="stacer"/>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588310384.desktop"/>
       </property>
     </property>
-    <property name="plugin-8" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588310575.desktop"/>
+      </property>
     </property>
-    <property name="plugin-17" type="string" value="clock">
-      <property name="digital-format" type="string" value="%I:%M %p"/>
-      <property name="mode" type="uint" value="2"/>
-      <property name="show-meridiem" type="bool" value="true"/>
-      <property name="show-military" type="bool" value="false"/>
-      <property name="flash-separators" type="bool" value="false"/>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588310776.desktop"/>
+      </property>
     </property>
-    <property name="plugin-18" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-12" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588311027.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-13" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588311148.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-14" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16588311329.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="165883114910.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="165883119511.desktop"/>
+      </property>
     </property>
   </property>
 </channel>

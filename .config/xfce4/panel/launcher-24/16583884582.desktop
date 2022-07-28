@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Power Options
+Comment=
+Exec=archlinux-logout
+Icon=/home/greyson/.icons/TokyoNight/panel/24/system-shutdown-panel.svg
+Path=
+Terminal=false
+StartupNotify=false

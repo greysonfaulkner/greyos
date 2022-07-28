@@ -13,7 +13,7 @@ xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 libinput-gestures &
 artha &
-xss-lock -- betterlockscreen -l dim -- --time-str="%H:%M" &
+#xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
 
 # System Tray
 nm-applet &
