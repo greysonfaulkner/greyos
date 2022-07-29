@@ -20,7 +20,7 @@ echo "************************"
 echo "*****Installing ZSH*****"
 echo "************************"
 sleep 1
-sudo pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm fish
 
 # Creating Directories
 echo "******************************"
@@ -179,15 +179,6 @@ ninja && sudo ninja install
 cd ~/greyos
 paru -S --noconfirm vala-panel-applets-xembed-git
 rm -rf ~/vala-panel-appmenu
-
-# Enabaling ZSH Shell
-echo "***********************"
-echo "*****Enabaling ZSH*****"
-echo "***********************"
-sleep 1
-paru -S --noconfirm oh-my-zsh-git
-paru -S --noconfirm zsh-syntax-highlighting
-chsh -s /usr/bin/zsh
 
 # Enabaling SDDM
 echo "************************"
