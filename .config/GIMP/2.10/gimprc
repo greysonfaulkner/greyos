@@ -27,6 +27,7 @@
     (padding-mode default)
     (padding-color (color-rgb 1 1 1))
     (padding-in-show-all no))
+(theme "Dracula")
 (icon-theme "Symbolic-High-Contrast")
 (image-resize-layer-set all)
 (layer-new-name "Texture")

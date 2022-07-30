@@ -15,12 +15,13 @@ cd paru
 makepkg -si
 cd ~/greyos
 
-# Install ZSH
-echo "************************"
-echo "*****Installing ZSH*****"
-echo "************************"
+# Install FISH
+echo "*************************"
+echo "*****Installing Fish*****"
+echo "*************************"
 sleep 1
 sudo pacman -S --noconfirm fish
+chsh -s /bin/fish
 
 # Creating Directories
 echo "******************************"

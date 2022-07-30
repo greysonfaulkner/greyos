@@ -6,8 +6,8 @@
   <property name="last-separator-position" type="int" value="175"/>
   <property name="last-show-hidden" type="bool" value="true"/>
   <property name="last-window-width" type="int" value="960"/>
-  <property name="last-window-height" type="int" value="1058"/>
-  <property name="last-window-maximized" type="bool" value="false"/>
+  <property name="last-window-height" type="int" value="1026"/>
+  <property name="last-window-maximized" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-column-widths" type="string" value="50,164,50,50,1284,50,50,84,63,220"/>
   <property name="misc-date-style" type="string" value="THUNAR_DATE_STYLE_ISO"/>
