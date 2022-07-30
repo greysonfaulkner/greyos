@@ -1,11 +1,11 @@
 [core-version-1]
-units=['87696e8b-f76f-4fbd-b7b1-f0b0e2ab8c47', 'toplevel1', 'd8bdc425-ce9c-4b90-ad90-dd64e990bba4', 'ded782ed-69be-47b5-84f5-cec31dc4e0a9', '7771c2c1-2618-4ea5-acf7-dc142d8dd877', 'b7001cb2-0a8b-40b8-87e3-c00dc8db2cf5', 'd26dac6f-8914-4896-8d8e-23caf75ac75f', 'f1586b64-ac96-4992-9b64-60d35e17cc4b', 'efce85d6-d1f0-4d72-9909-879f5a0e23ce', '8c748c1e-ad13-4977-9ba4-b729b60ec773', 'ee78d52f-63ba-4b4e-a295-65997fd558bd', '3def0e1d-3e50-4de6-81ce-6859ca68c594']
+units=['8c748c1e-ad13-4977-9ba4-b729b60ec773', '87696e8b-f76f-4fbd-b7b1-f0b0e2ab8c47', 'toplevel1', '7771c2c1-2618-4ea5-acf7-dc142d8dd877', 'ded782ed-69be-47b5-84f5-cec31dc4e0a9', 'd8bdc425-ce9c-4b90-ad90-dd64e990bba4', 'b7001cb2-0a8b-40b8-87e3-c00dc8db2cf5', 'd26dac6f-8914-4896-8d8e-23caf75ac75f', 'f1586b64-ac96-4992-9b64-60d35e17cc4b', '3def0e1d-3e50-4de6-81ce-6859ca68c594', '50b7cc86-ebfc-40e9-98b2-e0d6a6b16040', 'ee78d52f-63ba-4b4e-a295-65997fd558bd', '740c16fb-963d-4e71-9acd-b6bd89f325c8']
 
 [global]
 is-dark=true
 is-custom=false
 logout-command='openbox --exit'
-shutdown-command='systemctl shutdown -h now'
+shutdown-command='systemctl poweroff'
 
 lock-command='i3lock -i /home/greyson/wallpapers/101.png'
 run-command='rofi -show run'
@@ -29,9 +29,9 @@ background-file='/usr/share/vala-panel/images/background.png'
 autohide=false
 
 use-background-color=true
-background-color='rgba(1,22,39,0.7)'
+background-color='rgb(40,42,54)'
 use-foreground-color=true
-foreground-color='rgb(192,202,245)'
+foreground-color='rgb(248,248,242)'
 use-toolbar-appearance=false
 
 dock=true
@@ -121,14 +121,6 @@ position=0
 [7bc8f46b-8b0b-4b43-b9fe-a5b07b539cb3]
 
 [efce85d6-d1f0-4d72-9909-879f5a0e23ce]
-object-type='applet'
-plugin-type='org.valapanel.clock'
-toplevel-id='toplevel1'
-pack-type='center'
-position=0
-clock-format='%A, %b %d | %I:%M %p'
-bold-font=true
-tooltip-format='%A %x'
 
 [5a728841-7b0b-4ce9-8c64-409a210fe122]
 
@@ -232,7 +224,7 @@ pack-type='end'
 position=3
 is-system-menu=false
 is-menu-bar=false
-icon-name='/home/greyson/.icons/TokyoNight/panel/16/system-shutdown-panel.svg'
+icon-name='/home/greyson/.icons/tokyo-night/panel/16/system-shutdown-panel.svg'
 is-internal-menu=true
 model-file=''
 
@@ -244,3 +236,22 @@ pack-type='end'
 position=2
 size=2
 show-separator=false
+
+[803ecc67-d8c3-4bf2-8c02-aba9d728a642]
+
+[22e8bfca-0b99-4841-9927-ad647235be19]
+
+[50b7cc86-ebfc-40e9-98b2-e0d6a6b16040]
+object-type='applet'
+plugin-type='org.valapanel.buttons'
+toplevel-id='toplevel1'
+pack-type='end'
+position=5
+
+[740c16fb-963d-4e71-9acd-b6bd89f325c8]
+object-type='applet'
+plugin-type='org.valapanel.clock'
+toplevel-id='toplevel1'
+pack-type='center'
+position=0
+clock-format='%A, %b %d | %I:%m %p'
