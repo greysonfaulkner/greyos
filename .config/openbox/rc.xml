@@ -387,7 +387,7 @@
     </keybind>
     <keybind key="W-C-Escape">
       <action name="Execute">
-        <command>betterlockscreen -l dim -- --time-str="%H:%M"</command>
+        <command>betterlockscreen -l dim -- --time-str="%I:%M"</command>
       </action>
     </keybind>
     <keybind key="C-space">
@@ -460,6 +460,11 @@
         <command>alacritty -e ranger</command>
       </action>
     </keybind>
+	<keybind key="W-S-b">
+		<action name="Execute">
+			<command>~/.config/openbox/battery.sh</command>
+		</action>
+	</keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>mpv --no-video ~/.sounds/vol.mp3</command>

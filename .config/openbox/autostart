@@ -2,8 +2,8 @@
 mpv --no-video ~/.sounds/startup.flac &
 
 # Desktop Applications
-#xrootgif --daemon ~/gifs/spring.gif &
-nitrogen --restore &
+xrootgif --daemon ~/gifs/lain.gif &
+#nitrogen --restore &
 ~/.config/openbox/dock.sh
 #~/.config/openbox/taskbar.sh
 
@@ -13,11 +13,11 @@ xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 libinput-gestures &
 artha &
-#xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
+xss-lock -- betterlockscreen -l dim -- --time-str="%I:%M" &
 
 # System Tray
 nm-applet &
 flameshot &
 blueberry-tray &
-#cbatticon &
+cbatticon &
 volumeicon &

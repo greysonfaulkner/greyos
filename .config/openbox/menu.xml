@@ -75,7 +75,7 @@
 		<separator/>
 		<item label="Lockscreen">
 			<action name="Execute">
-				<execute>betterlockscreen -l dim -- --time-str=&quot;%H:%M&quot;</execute>
+				<execute>betterlockscreen -l dim -- --time-str=&quot;%I:%M&quot;</execute>
 			</action>
 		</item>
 		<item label="Power Options">

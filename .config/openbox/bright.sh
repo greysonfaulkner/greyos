@@ -2,6 +2,7 @@
 
 sleep 0.1
 
+
        LUM_RAW=`brightnessctl g`
        if [ "$LUM_RAW" = 0 ]
         then LUM="0%"
@@ -87,5 +88,7 @@ sleep 0.1
         fi
         LUM_STR="$LUM"
 
-~/.config/openbox/notify-send.sh --replace=555 --icon=/home/greyson/.icons/tokyo-night/apps/symbolic/display-brightness-symbolic.svg "Brightness" $LUM_STR
+# LUM_STR=`brightnessctl i | awk '{printf( $4)}' | sed -e 's/class//'` # System Agnostic
+
+~/.config/openbox/notify-send.sh --replace=555 --icon=/home/$USER/.icons/tokyo-night/apps/symbolic/display-brightness-symbolic.svg "Brightness" $LUM_STR
 
