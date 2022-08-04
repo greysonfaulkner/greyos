@@ -9,8 +9,8 @@
 window:
   dimensions:
      columns: 86
-     lines: 26
-  opacity: 0.85
+     lines: 28
+  opacity: 0.65
 
 
 # Font configuration

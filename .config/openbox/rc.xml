@@ -134,7 +134,7 @@
       <name>[9]</name>
       <name>10</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>800</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -293,6 +293,9 @@
     <keybind key="W-C-r">
       <action name="Reconfigure"/>
     </keybind>
+    <keybind key="W-C-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="C-W-c">
       <action name="Close"/>
@@ -362,6 +365,18 @@
         </finalactions>
       </action>
     </keybind>
+    <keybind key="W-Tab">
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-Tab">
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-Up">
       <action name="ToggleAlwaysOnTop"/>
@@ -387,7 +402,7 @@
     </keybind>
     <keybind key="W-C-Escape">
       <action name="Execute">
-        <command>betterlockscreen -l dim -- --time-str="%I:%M"</command>
+        <command>betterlockscreen -l dim -- --time-str="%l:%M"</command>
       </action>
     </keybind>
     <keybind key="C-space">
@@ -413,11 +428,6 @@
     <keybind key="W-C-b">
       <action name="Execute">
         <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-d">
-      <action name="Execute">
-        <command>brightnessctl s 0</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -457,14 +467,14 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>alacritty -e ranger</command>
+        <command>alacritty -e ranger ~/.config</command>
       </action>
     </keybind>
-	<keybind key="W-S-b">
-		<action name="Execute">
-			<command>~/.config/openbox/battery.sh</command>
-		</action>
-	</keybind>
+    <keybind key="W-S-b">
+      <action name="Execute">
+        <command>~/.config/openbox/battery.sh</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>mpv --no-video ~/.sounds/vol.mp3</command>
@@ -507,11 +517,6 @@
       </action>
       <action name="Execute">
         <command>~/.config/openbox/bright.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="Execute">
-        <command>rofi -show window</command>
       </action>
     </keybind>
   </keyboard>

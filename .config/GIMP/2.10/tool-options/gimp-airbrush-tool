@@ -1,12 +1,12 @@
 # GIMP gimp-airbrush-tool options
 
-(foreground (color-rgb 0 1 0.066225165562913801))
-(background (color-rgb 0.69411766529083252 0.60000002384185791 0.4745098352432251))
-(brush "2. Hardness 100")
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0 0 0))
+(brush "Snow Capped Mountain #3")
 (dynamics "Dynamics Off")
 (gradient "FG to BG (HSV counter-clockwise)")
 (palette "Color History")
-(brush-size 51)
+(brush-size 357)
 (brush-force 1)
 
 # end of gimp-airbrush-tool options

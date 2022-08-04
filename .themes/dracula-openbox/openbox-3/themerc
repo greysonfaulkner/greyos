@@ -1,6 +1,6 @@
 
 # Menu
-menu.border.width: 10
+menu.border.width: 4
 menu.overlap.x:    -20
 menu.overlap.y:    -20
 
@@ -23,7 +23,7 @@ menu.items.active.bg.color:     #282A36
 menu.items.active.text.color:   #BD93F9
 
 # Active window
-window.active.border.color:                           #BD93F9
+window.active.border.color:                           #282A36
 
 window.active.title.bg:                               solid flat
 window.active.title.bg.color:                         #282A36
@@ -129,7 +129,7 @@ window.inactive.button.toggled.pressed.bg:            parentrelative
 window.inactive.button.toggled.pressed.image.color:   #BD93F9
 
 # OSD
-osd.border.width:                    3
+osd.border.width:                    2
 osd.border.color:                    #282A36
 
 osd.bg:                              flat solid
@@ -165,7 +165,7 @@ menu.items.font:                     shadow=n
 menu.title.text.font:                shadow=n
 
 # Everything else
-border.width:                4
+border.width:                2
 padding.width:               0
 padding.height:              0
 window.handle.width:         0

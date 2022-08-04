@@ -2,18 +2,17 @@
 mpv --no-video ~/.sounds/startup.flac &
 
 # Desktop Applications
-xrootgif --daemon ~/gifs/lain.gif &
-#nitrogen --restore &
-~/.config/openbox/dock.sh
-#~/.config/openbox/taskbar.sh
+#xrootgif --daemon ~/gifs/spring.gif &
+nitrogen --restore &
+~/.config/openbox/gui.sh
 
 # Back End Programs
-picom --config ~/.config/picom/picom-no-corners.conf &
+picom --experimental-backends&
 xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 libinput-gestures &
 artha &
-xss-lock -- betterlockscreen -l dim -- --time-str="%I:%M" &
+xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
 
 # System Tray
 nm-applet &

@@ -113,7 +113,6 @@ sudo pacman -S --noconfirm plank
 sudo pacman -S --noconfirm network-manager-applet
 sudo pacman -S --noconfirm blueberry
 paru -S --noconfirm obmenu
-paru -S --noconfirm vala-panel
 paru -S --noconfirm xfce4-panel
 paru -S --noconfirm arcolinux-betterlockscreen
 paru -S --noconfirm arcolinux-logout
@@ -126,6 +125,7 @@ echo "*****Installing GUI Programs*****"
 echo "*********************************"
 sleep 1
 sudo pacman -S --noconfirm libreoffice-fresh
+sudo pacman -S --noconfirm vbam-wx
 paru -S --noconfirm brave
 paru -S --noconfirm cozy-audiobooks
 paru -S --noconfirm ghostwriter

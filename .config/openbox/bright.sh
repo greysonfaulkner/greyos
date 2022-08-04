@@ -88,7 +88,7 @@ sleep 0.1
         fi
         LUM_STR="$LUM"
 
-# LUM_STR=`brightnessctl i | awk '{printf( $4)}' | sed -e 's/class//'` # System Agnostic
+#LUM_STR=`brightnessctl i | awk '{printf( $4)}' | sed -e 's/class//' | sed -e 's/(//' | sed -e 's/)//'` # System Agnostic
 
 ~/.config/openbox/notify-send.sh --replace=555 --icon=/home/$USER/.icons/tokyo-night/apps/symbolic/display-brightness-symbolic.svg "Brightness" $LUM_STR
 

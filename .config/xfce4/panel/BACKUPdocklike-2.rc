@@ -1,0 +1,10 @@
+[user]
+indicatorColor=rgb(189,147,249)
+inactiveColor=rgb(255,121,198)
+indicatorStyle=1
+forceIconSize=true
+iconSize=28
+noWindowsListIfSingle=true
+onlyDisplayVisible=false
+pinned=/usr/share/applications/brave-browser.desktop;/usr/share/applications/ghostwriter.desktop;/usr/share/applications/spotify.desktop;/usr/share/applications/com.github.johnfactotum.Foliate.desktop;/usr/share/applications/smplayer.desktop;/usr/share/applications/audacity.desktop;/usr/share/applications/org.kde.kdenlive.desktop;/usr/share/applications/gimp.desktop;/usr/share/applications/com.obsproject.Studio.desktop;/usr/share/applications/discord.desktop;/usr/share/applications/visualboyadvance-m.desktop;/usr/share/applications/Mailspring.desktop;/usr/share/applications/firefox.desktop;/usr/share/applications/ch.theologeek.Manuskript.desktop;/usr/share/applications/libreoffice-writer.desktop;/usr/share/applications/stacer.desktop;/usr/share/applications/notepadqq.desktop;/usr/share/applications/org.qbittorrent.qBittorrent.desktop;/usr/share/applications/thunar.desktop;/usr/share/applications/Alacritty.desktop;
+showPreviews=true

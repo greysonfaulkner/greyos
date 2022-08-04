@@ -11,11 +11,11 @@
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 0 22)
-    (size 1920 1058)
+    (position 0 19)
+    (size 1920 1061)
     (open-on-exit)
     (aux-info
-        (left-docks-width "220")
+        (left-docks-width "199")
         (right-docks-width "286")
         (maximized "yes"))
     (gimp-toolbox
@@ -23,10 +23,17 @@
         (book
             (current-page 0)
             (dockable "gimp-tool-options"
+                (tab-style preview)
+                (aux-info
+                    (show-button-bar "false"))))
+        (book
+            (position 236)
+            (current-page 0)
+            (dockable "gimp-font-list"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-device-status"
+            (dockable "gimp-image-list"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
@@ -34,7 +41,7 @@
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-image-list"
+            (dockable "gimp-device-status"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))))
@@ -62,7 +69,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 755)
+            (position 647)
             (current-page 2)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
@@ -72,10 +79,10 @@
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-font-list"
+            (dockable "gimp-color-editor"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "true"))))))
+                    (current-page "GimpColorSelect"))))))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
     (position 0 22)
@@ -116,7 +123,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-text-tool-dialog")
     (position 0 300)
-    (size 370 274))
+    (size 380 274))
 (session-info "toplevel"
     (factory-entry "gimp-module-dialog")
     (position 480 276)
