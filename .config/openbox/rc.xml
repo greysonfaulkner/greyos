@@ -292,6 +292,9 @@
     </keybind>
     <keybind key="W-C-r">
       <action name="Reconfigure"/>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/save.wav</command>
+      </action>
     </keybind>
     <keybind key="W-C-d">
       <action name="ToggleShowDesktop"/>
@@ -299,6 +302,9 @@
     <!-- Keybindings for windows -->
     <keybind key="C-W-c">
       <action name="Close"/>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/close.wav</command>
+      </action>
     </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
@@ -342,6 +348,9 @@
           <action name="Focus"/>
           <action name="Raise"/>
           <action name="Unshade"/>
+	 	  <action name="Execute">
+         	<command>mpv --no-video ~/.sounds/select.wav</command>
+      	  </action>
         </finalactions>
       </action>
     </keybind>
@@ -366,15 +375,11 @@
       </action>
     </keybind>
     <keybind key="W-Tab">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
+      <action name="Execute">
+		  <command>rofi -show windowcd</command>
       </action>
-    </keybind>
-    <keybind key="W-S-Tab">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
@@ -394,10 +399,16 @@
       <action name="Execute">
         <command>alacritty</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
         <command>alacritty</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-C-Escape">
@@ -409,15 +420,24 @@
       <action name="Execute">
         <command>rofi -show drun</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="C-S-space">
       <action name="Execute">
         <command>rofi -show run</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <command>rofi -show filebrowser</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-b">
@@ -444,6 +464,9 @@
       <action name="Execute">
         <command>thunar</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
@@ -459,15 +482,24 @@
       <action name="Execute">
         <command>archlinux-logout</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-h">
       <action name="Execute">
         <command>alacritty -e htop</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>alacritty -e ranger ~/.config</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-S-b">
@@ -477,7 +509,7 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>mpv --no-video ~/.sounds/vol.mp3</command>
+        <command>mpv --no-video ~/.sounds/vol.wav</command>
       </action>
       <action name="Execute">
         <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
@@ -488,7 +520,7 @@
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>mpv --no-video ~/.sounds/vol.mp3</command>
+        <command>mpv --no-video ~/.sounds/vol.wav</command>
       </action>
       <action name="Execute">
         <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
@@ -502,7 +534,7 @@
         <command>brightnessctl s +5%</command>
       </action>
       <action name="Execute">
-        <command>mpv --no-video ~/.sounds/vol.mp3</command>
+        <command>mpv --no-video ~/.sounds/vol.wav</command>
       </action>
       <action name="Execute">
         <command>~/.config/openbox/bright.sh</command>
@@ -513,7 +545,7 @@
         <command>brightnessctl s 5%-</command>
       </action>
       <action name="Execute">
-        <command>mpv --no-video ~/.sounds/vol.mp3</command>
+        <command>mpv --no-video ~/.sounds/vol.wav</command>
       </action>
       <action name="Execute">
         <command>~/.config/openbox/bright.sh</command>
@@ -883,6 +915,10 @@
     <application type="normal">
       <decor>no</decor>
       <maximized>true</maximized>
+    </application>
+    <application name="cairo-dock">
+      <decor>no</decor>
+      <maximized>false</maximized>
     </application>
     <!--
   # this is an example with comments through out. use these to make your

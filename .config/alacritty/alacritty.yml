@@ -1,66 +1,33 @@
-# Dracula theme for Alacritty
-# https://draculatheme.com/alacritty
-#
-# Color palette
-# https://spec.draculatheme.com
-#
-# Template
-# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+# Alacritty Config
+#   ___ ___ _____   _____  ___  _  _   ___ _  _   _ _    _  ___  _ ___ ___
+#  / __| _ \ __\ \ / / __|/ _ \| \| | | __/_\| | | | |  | |/ / \| | __| _ \
+# | (_ |   / _| \ V /\__ \ (_) | .` | | _/ _ \ |_| | |__| ' <| .` | _||   /
+#  \___|_|_\___| |_| |___/\___/|_|\_| |_/_/ \_\___/|____|_|\_\_|\_|___|_|_\
 window:
   dimensions:
-     columns: 86
+     columns: 82
      lines: 28
-  opacity: 0.65
+  opacity: 0.5
 
 
 # Font configuration
 font:
   # Normal (roman) font face
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
     family: Hack
-
-    # The `style` can be specified to pick a specific face.
     style: Regular
-
   # Bold font face
   bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
     family: Hack
-
-    # The `style` can be specified to pick a specific face.
     style: Bold
-
   # Italic font face
   italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
     family: Hack
-
-    # The `style` can be specified to pick a specific face.
     style: Italic
-
   # Bold italic font face
-  #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
+  bold_italic:
     family: Hack
-
-    # The `style` can be specified to pick a specific face.
     style: Bold Italic
-
   # Point size
   size: 12.0
   
@@ -71,7 +38,7 @@ colors:
     bright_foreground: '#ffffff'
   cursor:
     text: CellBackground
-    cursor: CellForeground
+    cursor: '#8be9fd' 
   vi_mode_cursor:
     text: CellBackground
     cursor: CellForeground
@@ -120,30 +87,12 @@ colors:
 cursor:
   # Cursor style
   style:
-    # Cursor shape
-    #
     # Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
     shape: Block
-
     # Cursor blinking state
-    #
-    # Values for `blinking`:
-    #   - Never: Prevent the cursor from ever blinking
-    #   - Off: Disable blinking by default
-    #   - On: Enable blinking by default
-    #   - Always: Force the cursor to always blink
     blinking: On
-
-  # Vi mode cursor style
-  #
-  # If the vi mode cursor style is `None` or not specified, it will fall back to
-  # the style of the active value of the normal cursor.
-  #
-  # See `cursor.style` for available options.
-  #vi_mode_style: None
-
   # Cursor blinking interval in milliseconds.
-  blink_interval: 750
+  blink_interval: 600
