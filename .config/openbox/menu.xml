@@ -30,6 +30,12 @@
 				<action name="Reconfigure"/>
 			</item>
 			<separator/>
+			<item label="Display Settings">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<separator/>
 			<item label="Exit">
 				<action name="Exit"/>
 			</item>
@@ -60,11 +66,6 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="Display Settings">
-			<action name="Execute">
-				<execute>lxrandr</execute>
-			</action>
-		</item>
 		<separator/>
 		<menu id="root-menu-104950" label="Power Options">
 			<item label="Lock">
@@ -88,6 +89,11 @@
 			<item label="Restart">
 				<action name="Execute">
 					<execute>reboot</execute>
+				</action>
+			</item>
+			<item label="Power Settings">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
 				</action>
 			</item>
 		</menu>

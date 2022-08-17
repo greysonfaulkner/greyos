@@ -10,7 +10,7 @@
     <focusNew>yes</focusNew>
     <!-- always try to focus new windows when they appear. other rules do
        apply -->
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>dracula-openbox</name>
-    <titleLayout>L</titleLayout>
+    <titleLayout>CMIL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -348,9 +348,9 @@
           <action name="Focus"/>
           <action name="Raise"/>
           <action name="Unshade"/>
-	 	  <action name="Execute">
-         	<command>mpv --no-video ~/.sounds/select.wav</command>
-      	  </action>
+          <action name="Execute">
+            <command>mpv --no-video ~/.sounds/select.wav</command>
+          </action>
         </finalactions>
       </action>
     </keybind>
@@ -376,23 +376,26 @@
     </keybind>
     <keybind key="W-Tab">
       <action name="Execute">
-		  <command>rofi -show windowcd</command>
+        <command>rofi -show windowcd</command>
       </action>
       <action name="Execute">
         <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-Up">
+    <keybind key="W-C-Up">
       <action name="ToggleAlwaysOnTop"/>
     </keybind>
-    <keybind key="W-Down">
+    <keybind key="W-C-Down">
       <action name="ToggleAlwaysOnBottom"/>
     </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="Print">
       <action name="Execute">
         <command>flameshot gui</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/select.wav</command>
       </action>
     </keybind>
     <keybind key="W-Return">
@@ -442,22 +445,34 @@
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>brave</command>
+        <command>qutebrowser</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-C-b">
       <action name="Execute">
         <command>firefox</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
         <command>mailspring</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-v">
       <action name="Execute">
         <command>smplayer</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-n">
@@ -472,10 +487,16 @@
       <action name="Execute">
         <command>spotify</command>
       </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
+      </action>
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
         <command>ghostwriter</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
     <keybind key="W-Escape">
@@ -505,6 +526,9 @@
     <keybind key="W-S-b">
       <action name="Execute">
         <command>~/.config/openbox/battery.sh</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --no-video ~/.sounds/select.wav</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
@@ -572,7 +596,7 @@
       <mousebind button="A-Left" action="Click">
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
+      <mousebind button="W-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
       <mousebind button="A-Right" action="Press">
@@ -580,7 +604,7 @@
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="W-Right" action="Drag">
         <action name="Resize"/>
       </mousebind>
       <mousebind button="A-Middle" action="Press">
