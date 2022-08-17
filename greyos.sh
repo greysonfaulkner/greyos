@@ -126,7 +126,7 @@ echo "*********************************"
 sleep 1
 sudo pacman -S --noconfirm libreoffice-fresh
 sudo pacman -S --noconfirm vbam-wx
-paru -S --noconfirm brave
+paru -S --noconfirm qutebrowser
 paru -S --noconfirm cozy-audiobooks
 paru -S --noconfirm ghostwriter
 paru -S --noconfirm spotify
