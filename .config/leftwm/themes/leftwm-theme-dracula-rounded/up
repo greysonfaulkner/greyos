@@ -10,21 +10,28 @@ fi
 ln -s "$SCRIPTPATH"/down /tmp/leftwm-theme-down
 
 # Boot picom or compton if it exists
-picom --experimental-backends > /dev/null &
+picom --experimental-backends &
 
 # Set the theme.toml config
 leftwm command "LoadTheme $SCRIPTPATH/theme.toml"
 
-# Set background
-#feh --bg-fill "$SCRIPTPATH"/background.jpg
-nitrogen --restore
-#xrootgif --daemon /home/greyson/gifs/cyberpunk.gif &
+mpv --no-video ~/.sounds/startup.flac &
+
+#set background
+nitrogen --restore &
+#xrootgif --daemon /home/greyson/gifs/spooky.gif &
 
 libinput-gestures &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-#xfce4-power-manager &
+nm-applet &
+
+dunst &
+
+xfce4-power-manager &
+
+xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
 
 
 index=0

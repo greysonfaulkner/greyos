@@ -20,6 +20,6 @@ a:link, a:visited {
 a:hover {
   color: #ff79c6;
   text-decoration: none;
-  font-size: 18px;
-  font-family: "Hack", hack, monospace;
+  font-size: 22px;
+  font-family: "Hack", hack, bold;
 }

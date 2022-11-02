@@ -1,7 +1,7 @@
 modkey = "Mod4"
 mousekey = "Mod4"
 workspaces = []
-tags = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+tags = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 #tags = ["Browser", "Writing", "Music", "Reading", "Steam", "Extra", "Mail"]
 layouts = ["Monocle", "Fibonacci", "LeftWiderRightStack"]
 layout_mode = "Tag"
@@ -15,20 +15,25 @@ focus_new_windows = true
 
 [[keybind]]
 command = "Execute"
-value = "rofi -show drun"
+value = "~/.config/rofi/launchers/type-1/drun.sh"
 modifier = ["Control"]
 key = "space"
 
+[[keybind]]
+command = "ToggleFloating"
+value = ""
+modifier = ["modkey"]
+key = "space"
 
 [[keybind]]
 command = "Execute"
-value = "rofi -show filebrowser"
+value = "~/.config/rofi/launchers/type-1/file.sh"
 modifier = ["modkey"]
 key = "f"
 
 [[keybind]]
 command = "Execute"
-value = "archlinux-logout"
+value = "~/.config/rofi/powermenu/type-1/powermenu.sh"
 modifier = ["modkey"]
 key = "Escape"
 
@@ -108,7 +113,7 @@ key = "j"
 command = "MoveWindowTop"
 value = ""
 modifier = ["modkey"]
-key = "space"
+key = "Return"
 
 [[keybind]]
 command = "FocusWindowUp"
@@ -211,12 +216,6 @@ modifier = ["modkey"]
 key = "9"
 
 [[keybind]]
-command = "GotoTag"
-value = "10"
-modifier = ["modkey"]
-key = "0"
-
-[[keybind]]
 command = "MoveToTag"
 value = "1"
 modifier = ["modkey", "Control"]
@@ -271,20 +270,14 @@ modifier = ["modkey", "Control"]
 key = "9"
 
 [[keybind]]
-command = "MoveToTag"
-value = "10"
-modifier = ["modkey", "Control"]
-key = "0"
-
-[[keybind]]
 command = "Execute"
-value = "google-chrome-stable"
+value = "qutebrowser"
 modifier = ["modkey"]
 key = "b"
 
 [[keybind]]
 command = "Execute"
-value = "nautilus"
+value = "thunar"
 modifier = ["modkey"]
 key = "n"
 
@@ -320,7 +313,7 @@ key = "v"
 
 [[keybind]]
 command = "Execute"
-value = "alacritty -e joshuto"
+value = "alacritty -e ranger ~/.config"
 modifier = ["modkey"]
 key = "r"
 

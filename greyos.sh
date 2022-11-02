@@ -98,6 +98,7 @@ paru -S --noconfirm polkit-gnome
 paru -S --noconfirm kvantum
 paru -S --noconfirm mutimarkdown
 paru -S --noconfirm cmatrix
+paru -S --noconfirm gtk3-classic
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
@@ -112,10 +113,8 @@ sudo pacman -S --noconfirm lxrandr
 sudo pacman -S --noconfirm plank
 sudo pacman -S --noconfirm network-manager-applet
 sudo pacman -S --noconfirm blueberry
-paru -S --noconfirm obmenu
-paru -S --noconfirm xfce4-panel
+sudo pacman -S --noconfirm tint2
 paru -S --noconfirm arcolinux-betterlockscreen
-paru -S --noconfirm arcolinux-logout
 paru -S --noconfirm cbatticon
 paru -S --noconfirm volumeicon
 
@@ -132,7 +131,6 @@ paru -S --noconfirm cozy-audiobooks
 paru -S --noconfirm ghostwriter
 paru -S --noconfirm spotify
 paru -S --noconfirm foliate
-paru -S --noconfirm smplayer
 paru -S --noconfirm audacity
 paru -S --noconfirm gimp
 paru -S --noconfirm kdenlive
@@ -154,7 +152,6 @@ paru -S --noconfirm mpv
 paru -S --noconfirm flameshot
 paru -S --noconfirm ranger
 paru -S --noconfirm feh
-paru -S --noconfirm ristretto
 paru -S --noconfirm inkscape
 paru -S --noconfirm mcomix
 paru -S --noconfirm thunar
@@ -164,7 +161,7 @@ echo "***********************************"
 echo "*****Installing Extra Programs*****"
 echo "***********************************"
 sleep 1
-paru -S --noconfirm xarchiver thunar-archive-plugin xfce4-docklike-plugin
+paru -S --noconfirm xarchiver thunar-archive-plugin
 
 # Install Global Appmenu
 echo "***********************************"
@@ -180,6 +177,20 @@ cd ~/vala-panel-appmenu/global
 ninja && sudo ninja install
 cd ~/greyos
 paru -S --noconfirm vala-panel-applets-xembed-git
+rm -rf ~/vala-panel-appmenu
+
+# Patching Openbox to have Window Snapping
+echo "***********************************"
+echo "*****Patching Openbox Snapping*****"
+echo "***********************************"
+sleep 1
+cd ~
+git clone https://github.com/BeanGreen247/openbox-with-windows-snapping
+cd openbox-with-windows-snapping
+./configure --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib64
+make
+sudo make install
+cd ~/greyos
 rm -rf ~/vala-panel-appmenu
 
 # Enabaling SDDM

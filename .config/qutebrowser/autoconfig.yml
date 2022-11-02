@@ -46,12 +46,14 @@ settings:
         <Ctrl+Alt+c>: config-source
         <Ctrl+Left>: tab-prev
         <Ctrl+Right>: tab-next
-        <Ctrl+e>: set-cmd-text -s :open -t
+        <Ctrl+g>: set-cmd-text -s :open -t
         <Ctrl+o>: set-cmd-text -s :open
         <Ctrl+q>: null
         '>': forward
         '@': null
+        C: download-clear
         Ctrl+q: quit --save
+        D: null
         H: hint
         L: null
         T: config-cycle tabs.show always switching
@@ -99,6 +101,7 @@ settings:
         ss: null
         t: fake-key t
         u: fake-key u
+        v: null
         wIf: null
         wi: null
         xO: null
@@ -172,10 +175,13 @@ settings:
   content.notifications.enabled:
     https://w13.mangafreak.net: false
     https://www.allmath.com: false
+    https://www.chess.com: false
     https://www.facebook.com: false
     https://www.netflix.com: false
     https://www.reddit.com: false
     https://www.vaush.gg: false
+    https://www.wcostream.com: false
+    https://www.wcostream.net: false
     https://www.youtube.com: false
   downloads.position:
     global: bottom
@@ -186,7 +192,7 @@ settings:
   statusbar.show:
     global: never
   tabs.last_close:
-    global: close
+    global: startpage
   tabs.show:
     global: switching
   tabs.show_switching_delay:

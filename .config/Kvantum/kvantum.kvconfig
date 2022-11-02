@@ -1,5 +1,5 @@
 [General]
-theme=Amethyst-roundDark
+theme=Dracula-purple
 
 [CheckBox]
 frame=false

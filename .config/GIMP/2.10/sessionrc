@@ -7,17 +7,17 @@
 
 (session-info "toplevel"
     (factory-entry "gimp-empty-image-window")
-    (position 200 100)
+    (position 0 18)
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 0 19)
-    (size 1920 1061)
+    (position 0 18)
+    (size 1920 1062)
     (open-on-exit)
     (aux-info
-        (left-docks-width "199")
+        (left-docks-width "214")
         (right-docks-width "286")
-        (maximized "yes"))
+        (maximized "no"))
     (gimp-toolbox
         (side left)
         (book
@@ -28,20 +28,20 @@
                     (show-button-bar "false"))))
         (book
             (position 236)
-            (current-page 0)
+            (current-page 1)
             (dockable "gimp-font-list"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-image-list"
+            (dockable "gimp-color-editor"
+                (tab-style automatic)
+                (aux-info
+                    (current-page "GimpColorSelect")))
+            (dockable "gimp-pattern-grid"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-undo-history"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-device-status"
+            (dockable "gimp-brush-grid"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))))
@@ -54,12 +54,12 @@
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-channel-list"
+            (dockable "gimp-vectors-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-vectors-list"
+            (dockable "gimp-channel-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
@@ -67,26 +67,11 @@
             (dockable "gimp-document-list"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "true"))))
-        (book
-            (position 647)
-            (current-page 2)
-            (dockable "gimp-brush-grid"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-pattern-grid"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-color-editor"
-                (tab-style automatic)
-                (aux-info
-                    (current-page "GimpColorSelect"))))))
+                    (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
     (position 0 22)
-    (size 1920 1058))
+    (size 1920 1030))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 0 38))
@@ -95,12 +80,12 @@
     (position 719 395))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
-    (position 319 4)
-    (size 840 630))
+    (position 0 4)
+    (size 1920 1030))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
     (position 0 22)
-    (size 1920 1058))
+    (size 1920 1030))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
     (position 0 17))

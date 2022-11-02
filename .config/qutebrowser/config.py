@@ -13,6 +13,7 @@ dracula.draw.blood(c, {
 config.bind('V', 'hint links spawn --detach mpv --force-window yes {hint-url}')
 config.bind('<Ctrl-Right>', 'tab-next')
 config.bind('<Ctrl-Left>', 'tab-prev')
+config.bind('T','config-cycle tabs.show always switching')
 
 config.bind('<Ctrl-1>', 'tab-focus 1')
 config.bind('<Ctrl-2>', 'tab-focus 2')

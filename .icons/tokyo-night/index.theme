@@ -31,7 +31,7 @@
 # * Numberless icons are from Gravit Designer, under GPL3/MIT
 
 [Icon Theme]
-Name=tokyonight
+Name=tokyo-night
 Comment=A cyberpunkish, elegant, futuristic, modern and Papirus-like icons theme.
 Comment[af]='N cyberpunkagtige, elegante, futuristiese, moderne en Papirusagtig ikoone tema.
 Comment[ca]=Un tema cyberpunk, elegant, futurista, semblant al Papirus i modern d'icones.
@@ -53,7 +53,7 @@ Comment[ro]=O temă cyberpunk, futuristă, modernă, cu icoane asemenea Papirus
 Comment[ru]=Киберпанковая, элегантная, футуристичная и современная Papirus-подобная тема иконок.
 Comment[uk]=Кіберпанкова, елегантна, футуристична, модернова та папірусована тема іконок.
 
-Inherits=Papirus
+#Inherits=Papirus
 
 Example=folder
 

@@ -14,8 +14,8 @@ leftwm command "LoadTheme $SCRIPTPATH/theme.toml"
 mpv --no-video ~/.sounds/startup.flac &
 
 #set background
-#nitrogen --restore &
-xrootgif --daemon /home/greyson/gifs/spring.gif &
+nitrogen --restore &
+#xrootgif --daemon /home/greyson/gifs/spring.gif &
 
 libinput-gestures &
 

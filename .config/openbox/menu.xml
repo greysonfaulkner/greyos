@@ -13,6 +13,16 @@
 						<execute>alacritty -e vim .config/openbox/autostart</execute>
 					</action>
 				</item>
+				<item label="Classic">
+					<action name="Execute">
+						<execute>alacritty -e vim .config/openbox/classic.sh</execute>
+					</action>
+				</item>
+				<item label="Modern">
+					<action name="Execute">
+						<execute>alacritty -e vim .config/openbox/modern.sh</execute>
+					</action>
+				</item>
 			</menu>
 			<menu id="client-list-menu"/>
 			<separator/>
@@ -21,9 +31,14 @@
 					<execute>obmenu</execute>
 				</action>
 			</item>
-			<item label="Restart UI">
+			<item label="Modern UI">
 				<action name="Execute">
-					<execute>~/.config/openbox/gui.sh</execute>
+					<execute>~/.config/openbox/modern.sh</execute>
+				</action>
+			</item>
+			<item label="Classic UI">
+				<action name="Execute">
+					<execute>~/.config/openbox/classic.sh</execute>
 				</action>
 			</item>
 			<item label="Reconfigure">
@@ -58,7 +73,7 @@
 		</item>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>alacritty</execute>
+				<execute>cool-retro-term</execute>
 			</action>
 		</item>
 		<item label="File Manager">

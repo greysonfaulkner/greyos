@@ -5,12 +5,8 @@ end
 # Alias List
 alias hibernate="systemctl hibernate"
 alias neoconf="vim .config/neofetch/config.conf"
-alias polybar="/home/greyson/.config/polybar/launch.sh"
-alias polyconf="vim .config/polybar/config"
 alias cl="clear;neofetch"
-alias top="top | lolcat"
-alias files="joshuto"
-alias tui="killall spotifyd;spotifyd;spt"
+alias files="ranger"
 alias q="exit"
 alias brightness="brightnessctl s"
 alias vol="volumectl set"
@@ -27,11 +23,10 @@ alias pac="sudo pacman -S"
 alias matrix="cmatrix -b -C blue"
 alias play="mpv --fs"
 alias markdown="mutimarkdown -t odt -o"
-alias mage="cd ~/Documents/project-mage-tower"
-alias launchday="cd ~/Documents/project-launch-day"
-alias fantasy="cd ~/Documents/project-political-fantasy"
-alias fanfic="cd ~/Documents/fanfic"
 alias ls="lsd -aF"
+alias swap="/home/greyson/.scripts/swap.sh"
+
+#alias neofetch="neofetch --source /home/greyson/ascii/arch"
 
 starship init fish | source
 
