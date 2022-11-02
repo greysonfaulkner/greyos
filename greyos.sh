@@ -114,6 +114,7 @@ sudo pacman -S --noconfirm plank
 sudo pacman -S --noconfirm network-manager-applet
 sudo pacman -S --noconfirm blueberry
 sudo pacman -S --noconfirm tint2
+sudo pacman -S --noconfirm vala-panel
 paru -S --noconfirm arcolinux-betterlockscreen
 paru -S --noconfirm cbatticon
 paru -S --noconfirm volumeicon
@@ -155,6 +156,7 @@ paru -S --noconfirm feh
 paru -S --noconfirm inkscape
 paru -S --noconfirm mcomix
 paru -S --noconfirm thunar
+paru -S --noconfirm leafpad
 
 # Install Extra Programs
 echo "***********************************"
@@ -191,7 +193,7 @@ cd openbox-with-windows-snapping
 make
 sudo make install
 cd ~/greyos
-rm -rf ~/vala-panel-appmenu
+rm -rf ~/openbox-with-windows-snapping
 
 # Enabaling SDDM
 echo "************************"
