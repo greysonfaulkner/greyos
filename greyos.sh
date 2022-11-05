@@ -181,20 +181,6 @@ cd ~/greyos
 paru -S --noconfirm vala-panel-applets-xembed-git
 rm -rf ~/vala-panel-appmenu
 
-# Patching Openbox to have Window Snapping
-echo "***********************************"
-echo "*****Patching Openbox Snapping*****"
-echo "***********************************"
-sleep 1
-cd ~
-git clone https://github.com/BeanGreen247/openbox-with-windows-snapping
-cd openbox-with-windows-snapping
-./configure --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib64
-make
-sudo make install
-cd ~/greyos
-rm -rf ~/openbox-with-windows-snapping
-
 # Enabaling SDDM
 echo "************************"
 echo "*****Enabaling SDDM*****"
@@ -227,6 +213,7 @@ mv .config/ ~
 mv .sounds/ ~
 mv .local/ ~
 mv .xinitrc ~
+mv rofi/ ~
 sudo rm -rf /usr/share/smplayer
 sudo mv smplayer/ /usr/share
 
