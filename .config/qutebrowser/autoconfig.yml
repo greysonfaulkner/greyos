@@ -194,11 +194,13 @@ settings:
   tabs.last_close:
     global: startpage
   tabs.show:
-    global: switching
+    global: always
   tabs.show_switching_delay:
     global: 600
   tabs.title.format:
     global: '{audio}{current_title}{private}'
+  tabs.title.format_pinned:
+    global: '{index}'
   url.default_page:
     global: file:///home/greyson/.config/qutebrowser/newtab.html
   url.searchengines:
@@ -206,3 +208,5 @@ settings:
       DEFAULT: https://google.com/search?hl=en&q={}
   url.start_pages:
     global: file:///home/greyson/.config/qutebrowser/newtab.html
+  window.title_format:
+    global: '{perc}{current_title}'

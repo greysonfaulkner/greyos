@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mpv --no-video ~/.sounds/vol.wav
+mpv --keep-open=no --volume=80 --no-video ~/.sounds/vol.wav
 
 pactl set-sink-volume @DEFAULT_SINK@ +5%
 

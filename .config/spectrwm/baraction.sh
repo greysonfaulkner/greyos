@@ -50,8 +50,28 @@ cairo-coloremoji
         # SPT_SHORT=`cat /home/greyson/.config/spotifyd/now_playing.txt | awk '{print $4,$5,$6,$7,$8,$9}'`
         #SPT_STR=$SPT_SHORT
 
+# Memory
+		MEM=`free | grep Mem | awk '{print $3/$2 * 100.0}'`
+		MEM_PEC=`printf "%.0f" $(echo "$MEM + 0.5" | bc)`
+
+# Temp
+		TEMP=`sensors | grep -m 1 Tctl | awk '{print substr($2, 2, length($2)-5)}'`
+				if [ "$TEMP" -gt "80" ]
+                then
+                TEMP_OUT="+@fg=2;$TEMP"
+                else TEMP_OUT="$TEMP"
+                fi
+
+		WIFI=`grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) "%" }'`
+			if [ "$WIFI" = "" ]
+			then
+			WIFI="N/A"
+			fi
+
 #Output
-        echo -e "+@fn=0; +@fg=0;Volume: +@fg=1; $VOL_STR +@fg=0; Brightness: +@fg=1; $LUM_STR +@fg=0; Battery: +@fg=1; $POWER_STR"  #Now Playing: +@fg=1; $SPT_SHORT
+        echo -e "+@fn=1; +@fg=0; CPU Temp: +@fn=0;< +@fg=1;$TEMP_OUT°+@fg=0; >+@fn=1;  Memory: +@fn=0;<+@fg=1; $MEM_PEC% +@fg=0;>+@fn=1;  Wifi: +@fn=0;<+@fg=1; $WIFI +@fg=0;>+@fn=1;  Volume: +@fn=0;<+@fg=1; $VOL_STR +@fg=0;>+@fn=1;  Brightness: +@fn=0;<+@fg=1; $LUM_STR +@fn=1;>+@fg=0;  Battery: +@fn=0;<+@fg=1; $POWER_STR +@fg=0;>+@fn=1;"
+		
+		#echo -e "+@fn=1; +@fg=0; TEMP: +@fn=0;< +@fg=1;$TEMP_OUT°+@fg=0; >+@fn=1;  RAM: +@fn=0;<+@fg=1; $MEM_PEC% +@fg=0;>+@fn=1;  WIFI: +@fn=0;<+@fg=1; $WIFI +@fg=0;>+@fn=1;  VOL: +@fn=0;<+@fg=1; $VOL_STR +@fg=0;>+@fn=1;  BRIGHT: +@fn=0;<+@fg=1; $LUM_STR +@fn=1;>+@fg=0;  BAT: +@fn=0;<+@fg=1; $POWER_STR +@fg=0;>+@fn=1;"
 
 
         sleep $SLEEP_SEC

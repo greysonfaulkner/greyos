@@ -73,7 +73,7 @@
 		</item>
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>cool-retro-term</execute>
+				<execute>alacritty</execute>
 			</action>
 		</item>
 		<item label="File Manager">

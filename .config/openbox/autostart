@@ -14,6 +14,7 @@ xfce4-power-manager &
 libinput-gestures &
 artha &
 xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
+# lead &
 
 # System Tray
 nm-applet &
