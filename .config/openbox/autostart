@@ -1,24 +1,24 @@
 # Startup Sound
-mpv --no-video ~/.sounds/startup.flac &
+mpv  --keep-open=no --no-video --volume=75 ~/.sounds/startup.flac &
 
 # Desktop Applications
 #xrootgif --daemon ~/gifs/spooky.gif &
-nitrogen --restore &
-~/.config/openbox/modern.sh
-#~/.config/openbox/classic.sh
+#nitrogen --restore &
+#~/.config/openbox/modern.sh
+~/.config/openbox/classic.sh
 
 # Back End Programs
 picom --experimental-backends &
-xfce4-power-manager &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#lxsession &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1&
 libinput-gestures &
+xfce4-power-manager &
+pamac-tray &
 artha &
 xss-lock -- betterlockscreen -l dim -- --time-str="%l:%M" &
-# lead &
 
 # System Tray
 nm-applet &
-flameshot &
 blueberry-tray &
 cbatticon &
 volumeicon &

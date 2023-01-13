@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mpv --no-video ~/.sounds/startup.flac
+mpv --keep-open=no --volume=50 --no-video  ~/.sounds/startup.flac

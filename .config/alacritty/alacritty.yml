@@ -6,7 +6,7 @@
 window:
   dimensions:
      columns: 82
-     lines: 28
+     lines: 25
   opacity: 0.65
   padding:
     x: 8

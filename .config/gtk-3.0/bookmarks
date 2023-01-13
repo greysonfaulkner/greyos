@@ -3,11 +3,9 @@ file:///home/greyson/Documents Documents
 file:///home/greyson/Pictures Pictures
 file:///home/greyson/Videos Videos
 file:///home/greyson/Music Music
-smb://greysons-pc.local/weeb%20vault/ weeb vault on greysons-pc.local
 file:///home/greyson/.config .config
-file:///home/greyson/.themes
-file:///home/greyson/.icons
-file:///home/greyson/wallpapers wallpapers
-file:///home/greyson/Documents/manga
-file:///home/greyson/Documents/comics
-file:///home/greyson/rpg/assets
+file:///home/greyson/.themes .themes
+file:///home/greyson/.icons .icons
+file:///home/greyson/Documents/manga manga
+file:///home/greyson/Documents/comics comics
+file:///home/greyson/Pictures/wallpapers wallpapers

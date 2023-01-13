@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
-	<menu id="root-menu" label="OpenBox 3">
+    <menu id="root-menu" label="OpenBox 3">
 		<menu id="40" label="OpenBox Settings">
 			<menu id="40-02815" label="Configs">
 				<item label="Main Config">
@@ -66,9 +66,9 @@
 				<execute>lxappearance</execute>
 			</action>
 		</item>
-		<item label="Wallpaper">
+		<item label="Desktop Settings">
 			<action name="Execute">
-				<execute>nitrogen</execute>
+				<execute>pcmanfm --desktop-pref</execute>
 			</action>
 		</item>
 		<item label="Terminal">
@@ -78,10 +78,425 @@
 		</item>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>pcmanfm</execute>
 			</action>
 		</item>
 		<separator/>
+		<menu id="42069" label="Applications">
+			<menu id="1" label="Development">
+				<item label="GDB"> <action name="Execute">
+					<execute>alacritty -e gdb</execute>
+				</action> </item>
+				<item label="IDLE (Python IDE)"> <action name="Execute">
+					<execute>idle</execute>
+				</action> </item>
+				<item label="Notepadqq"> <action name="Execute">
+					<execute>notepadqq</execute>
+				</action> </item>
+				<item label="Python"> <action name="Execute">
+					<execute>alacritty -e python</execute>
+				</action> </item>
+				<item label="Python (v2.7)"> <action name="Execute">
+					<execute>alacritty -e python2.7</execute>
+				</action> </item>
+				<item label="Qt Assistant"> <action name="Execute">
+					<execute>assistant</execute>
+				</action> </item>
+				<item label="Qt Designer"> <action name="Execute">
+					<execute>designer</execute>
+				</action> </item>
+				<item label="Qt Linguist"> <action name="Execute">
+					<execute>linguist</execute>
+				</action> </item>
+				<item label="Qt QDBusViewer"> <action name="Execute">
+					<execute>qdbusviewer</execute>
+				</action> </item>
+				<item label="Tclsh8.6"> <action name="Execute">
+					<execute>alacritty -e tclsh8.6</execute>
+				</action> </item>
+			</menu>
+			<menu id="2" label="Editors">
+				<item label="AA Fire"> <action name="Execute">
+					<execute>alacritty -e aafire -driver slang</execute>
+				</action> </item>
+				<item label="Leafpad"> <action name="Execute">
+					<execute>leafpad</execute>
+				</action> </item>
+				<item label="Vim"> <action name="Execute">
+					<execute>alacritty -e vim</execute>
+				</action> </item>
+			</menu>
+			<menu id="8" label="Education">
+				<item label="Artha"> <action name="Execute">
+					<execute>artha</execute>
+				</action> </item>
+			</menu>
+			<menu id="18" label="Games">
+				<menu id="9" label="Adventure">
+					<item label="Sclient"> <action name="Execute">
+						<execute>sclient</execute>
+					</action> </item>
+				</menu>
+				<menu id="10" label="Arcade">
+					<item label="PacMan"> <action name="Execute">
+						<execute>pacman</execute>
+					</action> </item>
+				</menu>
+				<item label="visualboyadvance-m"> <action name="Execute">
+					<execute>visualboyadvance-m</execute>
+				</action> </item>
+			</menu>
+			<menu id="6" label="Graphics">
+				<item label="Flameshot"> <action name="Execute">
+					<execute>flameshot</execute>
+				</action> </item>
+				<item label="GNU Image Manipulation Program"> <action name="Execute">
+					<execute>gimp-2.10</execute>
+				</action> </item>
+				<item label="GraphicsMagick"> <action name="Execute">
+					<execute>gm display logo:</execute>
+				</action> </item>
+				<item label="Inkscape"> <action name="Execute">
+					<execute>inkscape</execute>
+				</action> </item>
+				<item label="LibreOffice Draw"> <action name="Execute">
+					<execute>libreoffice --draw</execute>
+				</action> </item>
+				<item label="MComix"> <action name="Execute">
+					<execute>mcomix</execute>
+				</action> </item>
+				<item label="Ristretto Image Viewer"> <action name="Execute">
+					<execute>ristretto</execute>
+				</action> </item>
+				<item label="The GIMP"> <action name="Execute">
+					<execute>gimp</execute>
+				</action> </item>
+			</menu>
+			<menu id="7" label="Multimedia">
+				<item label="ALSA mixer"> <action name="Execute">
+					<execute>alacritty -e alsamixer</execute>
+				</action> </item>
+				<item label="Audacity"> <action name="Execute">
+					<execute>audacity</execute>
+				</action> </item>
+				<item label="Audacity"> <action name="Execute">
+					<execute>env UBUNTU_MENUPROXY=0 audacity</execute>
+				</action> </item>
+				<item label="Cozy"> <action name="Execute">
+					<execute>com.github.geigi.cozy</execute>
+				</action> </item>
+				<item label="DeaDBeeF"> <action name="Execute">
+					<execute>deadbeef</execute>
+				</action> </item>
+				<item label="HandBrake"> <action name="Execute">
+					<execute>ghb</execute>
+				</action> </item>
+				<item label="Kdenlive"> <action name="Execute">
+					<execute>kdenlive</execute>
+				</action> </item>
+				<item label="Nuclear"> <action name="Execute">
+					<execute>nuclear</execute>
+				</action> </item>
+				<item label="mpv Media Player"> <action name="Execute">
+					<execute>mpv --player-operation-mode=pseudo-gui</execute>
+				</action> </item>
+				<item label="OBS Studio"> <action name="Execute">
+					<execute>obs</execute>
+				</action> </item>
+				<item label="PulseAudio Volume Control"> <action name="Execute">
+					<execute>pavucontrol</execute>
+				</action> </item>
+				<item label="Qt V4L2 test Utility"> <action name="Execute">
+					<execute>qv4l2</execute>
+				</action> </item>
+				<item label="Qt V4L2 video capture utility"> <action name="Execute">
+					<execute>qvidcap</execute>
+				</action> </item>
+				<item label="Spotify"> <action name="Execute">
+					<execute>spotify</execute>
+				</action> </item>
+				<item label="VLC media player"> <action name="Execute">
+					<execute>vlc</execute>
+				</action> </item>
+				<item label="VLC media player"> <action name="Execute">
+					<execute>qvlc</execute>
+				</action> </item>
+				<item label="Volume Icon"> <action name="Execute">
+					<execute>volumeicon</execute>
+				</action> </item>
+			</menu>
+			<menu id="5" label="Network">
+				<item label="Archive of Our Own"> <action name="Execute">
+					<execute>chromium --app="https://archiveofourown.org/"</execute>
+				</action> </item>
+				<item label="Avahi SSH Server Browser"> <action name="Execute">
+					<execute>bssh</execute>
+				</action> </item>
+				<item label="Avahi VNC Server Browser"> <action name="Execute">
+					<execute>bvnc</execute>
+				</action> </item>
+				<item label="Batfamily Webtoon"> <action name="Execute">
+					<execute>chromium --app="https://www.webtoons.com/en/slice-of-life/batman-wayne-family-adventures/list?title_no=3180&page=1#"</execute>
+				</action> </item>
+				<item label="Chromium"> <action name="Execute">
+					<execute>chromium</execute>
+				</action> </item>
+				<item label="Discord Canary"> <action name="Execute">
+					<execute>discord-canary</execute>
+				</action> </item>
+				<item label="Disney+"> <action name="Execute">
+					<execute>chromium --app="https://www.disneyplus.com/home/"</execute>
+				</action> </item>
+				<item label="FireFox"> <action name="Execute">
+					<execute>firefox</execute>
+				</action> </item>
+				<item label="Google Drive"> <action name="Execute">
+					<execute>chromium --app="https://drive.google.com/drive/my-drive"</execute>
+				</action> </item>
+				<item label="HBO Max"> <action name="Execute">
+					<execute>chromium --app="https://play.hbomax.com/"</execute>
+				</action> </item>
+				<item label="Mailspring"> <action name="Execute">
+					<execute>mailspring</execute>
+				</action> </item>
+				<item label="Netflix"> <action name="Execute">
+					<execute>chromium --app="https://www.netflix.com/browse"</execute>
+				</action> </item>
+				<item label="Paramount +"> <action name="Execute">
+					<execute>chromium --app="https://www.paramountplus.com/home/"</execute>
+				</action> </item>
+				<item label="Peacock"> <action name="Execute">
+					<execute>chromium --app="https://www.peacocktv.com/"</execute>
+				</action> </item>
+				<item label="Private Internet Access"> <action name="Execute">
+					<execute>/opt/piavpn/bin/pia-client</execute>
+				</action> </item>
+				<item label="qBittorrent"> <action name="Execute">
+					<execute>qbittorrent</execute>
+				</action> </item>
+				<item label="qutebrowser"> <action name="Execute">
+					<execute>qutebrowser</execute>
+				</action> </item>
+				<item label="Steam (Runtime)"> <action name="Execute">
+					<execute>steam-runtime</execute>
+				</action> </item>
+				<item label="TkVNC"> <action name="Execute">
+					<execute>xterm -e tkvnc</execute>
+				</action> </item>
+				<item label="Tumblr"> <action name="Execute">
+					<execute>chromium --app="https://tumblr.com/"</execute>
+				</action> </item>
+			</menu>
+			<menu id="3" label="Office">
+				<item label="Foliate"> <action name="Execute">
+					<execute>com.github.johnfactotum.Foliate</execute>
+				</action> </item>
+				<item label="ghostwriter"> <action name="Execute">
+					<execute>ghostwriter</execute>
+				</action> </item>
+				<item label="LibreOffice Calc"> <action name="Execute">
+					<execute>libreoffice --calc</execute>
+				</action> </item>
+				<item label="LibreOffice Impress"> <action name="Execute">
+					<execute>libreoffice --impress</execute>
+				</action> </item>
+				<item label="LibreOffice Math"> <action name="Execute">
+					<execute>libreoffice --math</execute>
+				</action> </item>
+				<item label="LibreOffice Start Center"> <action name="Execute">
+					<execute>libreoffice</execute>
+				</action> </item>
+				<item label="LibreOffice Writer"> <action name="Execute">
+					<execute>libreoffice --writer</execute>
+				</action> </item>
+				<item label="Okular"> <action name="Execute">
+					<execute>okular</execute>
+				</action> </item>
+				<item label="PostgreSQL Database"> <action name="Execute">
+					<execute>alacritty -e psql template1</execute>
+				</action> </item>
+				<item label="RedNotebook"> <action name="Execute">
+					<execute>rednotebook</execute>
+				</action> </item>
+			</menu>
+			<menu id="4" label="Science">
+				<item label="bc"> <action name="Execute">
+					<execute>alacritty -e bc</execute>
+				</action> </item>
+				<item label="dc"> <action name="Execute">
+					<execute>alacritty -e dc</execute>
+				</action> </item>
+			</menu>
+			<menu id="19" label="Shells">
+				<item label="Alacritty"> <action name="Execute">
+					<execute>alacritty</execute>
+				</action> </item>
+				<item label="File Manager PCManFM"> <action name="Execute">
+					<execute>pcmanfm</execute>
+				</action> </item>
+				<item label="Files"> <action name="Execute">
+					<execute>nautilus</execute>
+				</action> </item>
+				<item label="GIT"> <action name="Execute">
+					<execute>alacritty -e git</execute>
+				</action> </item>
+				<item label="ranger"> <action name="Execute">
+					<execute>alacritty -e ranger</execute>
+				</action> </item>
+				<item label="Thunar File Manager"> <action name="Execute">
+					<execute>thunar</execute>
+				</action> </item>
+				<item label="UXTerm"> <action name="Execute">
+					<execute>uxterm</execute>
+				</action> </item>
+				<item label="Xterm"> <action name="Execute">
+					<execute>xterm</execute>
+				</action> </item>
+			</menu>
+			<menu id="37" label="System">
+				<menu id="36" label="Settings">
+					<menu id="21" label="GNOME">
+						<item label="Add/Remove Software"> <action name="Execute">
+							<execute>pamac-manager</execute>
+						</action> </item>
+						<item label="Advanced Network Configuration"> <action name="Execute">
+							<execute>nm-connection-editor</execute>
+						</action> </item>
+						<item label="ArcoLinux Betterlockscreen"> <action name="Execute">
+							<execute>arcolinux-betterlockscreen</execute>
+						</action> </item>
+						<item label="Bluetooth"> <action name="Execute">
+							<execute>blueberry</execute>
+						</action> </item>
+					</menu>
+					<item label="Customize Look and Feel"> <action name="Execute">
+						<execute>lxappearance</execute>
+					</action> </item>
+					<item label="Desktop Preferences"> <action name="Execute">
+						<execute>pcmanfm --desktop-pref</execute>
+					</action> </item>
+					<item label="File Manager Settings"> <action name="Execute">
+						<execute>thunar-settings</execute>
+					</action> </item>
+					<item label="Grub Customizer"> <action name="Execute">
+						<execute>grub-customizer</execute>
+					</action> </item>
+					<item label="Kvantum Manager"> <action name="Execute">
+						<execute>kvantummanager</execute>
+					</action> </item>
+					<item label="Monitor Settings"> <action name="Execute">
+						<execute>lxrandr</execute>
+					</action> </item>
+					<item label="nitrogen"> <action name="Execute">
+						<execute>nitrogen</execute>
+					</action> </item>
+					<item label="Notifications"> <action name="Execute">
+						<execute>xfce4-notifyd-config</execute>
+					</action> </item>
+					<item label="Openbox Configuration Manager"> <action name="Execute">
+						<execute>obconf</execute>
+					</action> </item>
+					<item label="Power Manager"> <action name="Execute">
+						<execute>xfce4-power-manager-settings</execute>
+					</action> </item>
+					<item label="Preferred Applications"> <action name="Execute">
+						<execute>libfm-pref-apps</execute>
+					</action> </item>
+					<item label="Qt5 Settings"> <action name="Execute">
+						<execute>qt5ct</execute>
+					</action> </item>
+					<item label="Tint2 Settings"> <action name="Execute">
+						<execute>tint2conf</execute>
+					</action> </item>
+				</menu>
+				<item label="Android File Transfer (MTP)"> <action name="Execute">
+					<execute>android-file-transfer</execute>
+				</action> </item>
+				<item label="Avahi Zeroconf Browser"> <action name="Execute">
+					<execute>avahi-discover</execute>
+				</action> </item>
+				<item label="fish"> <action name="Execute">
+					<execute>alacritty -e fish</execute>
+				</action> </item>
+				<item label="GParted"> <action name="Execute">
+					<execute>gparted</execute>
+				</action> </item>
+				<item label="Hardware Locality lstopo"> <action name="Execute">
+					<execute>lstopo</execute>
+				</action> </item>
+				<item label="Htop"> <action name="Execute">
+					<execute>alacritty -e htop</execute>
+				</action> </item>
+				<item label="Openbox Menu Editor"> <action name="Execute">
+					<execute>obmenu</execute>
+				</action> </item>
+				<item label="pstree"> <action name="Execute">
+					<execute>alacritty -e pstree</execute>
+				</action> </item>
+				<item label="Pstree"> <action name="Execute">
+					<execute>alacritty -e pstree.x11</execute>
+				</action> </item>
+				<item label="pstree"> <action name="Execute">
+					<execute>xterm -e /usr/bin/pstree.x11</execute>
+				</action> </item>
+				<item label="Tint2"> <action name="Execute">
+					<execute>tint2</execute>
+				</action> </item>
+				<item label="Top"> <action name="Execute">
+					<execute>alacritty -e top</execute>
+				</action> </item>
+				<item label="Vala Panel"> <action name="Execute">
+					<execute>vala-panel</execute>
+				</action> </item>
+			</menu>
+			<menu id="38" label="Utilities">
+				<item label="About Xfce"> <action name="Execute">
+					<execute>xfce4-about</execute>
+				</action> </item>
+				<item label="balenaEtcher"> <action name="Execute">
+					<execute>/opt/balenaEtcher/balena-etcher</execute>
+				</action> </item>
+				<item label="compton"> <action name="Execute">
+					<execute>compton</execute>
+				</action> </item>
+				<item label="Console Matrix (Text)"> <action name="Execute">
+					<execute>alacritty -e cmatrix</execute>
+				</action> </item>
+				<item label="Console Matrix (Virtual Console)"> <action name="Execute">
+					<execute>alacritty -e cmatrix -l</execute>
+				</action> </item>
+				<item label="Console Matrix (X11)"> <action name="Execute">
+					<execute>cmatrix -x</execute>
+				</action> </item>
+				<item label="Font Manager"> <action name="Execute">
+					<execute>font-manager</execute>
+				</action> </item>
+				<item label="Font Viewer"> <action name="Execute">
+					<execute>/usr/lib/font-manager/font-viewer</execute>
+				</action> </item>
+				<item label="Galculator"> <action name="Execute">
+					<execute>galculator</execute>
+				</action> </item>
+				<item label="Gestures"> <action name="Execute">
+					<execute>gestures</execute>
+				</action> </item>
+				<item label="Info"> <action name="Execute">
+					<execute>alacritty -e info</execute>
+				</action> </item>
+				<item label="picom"> <action name="Execute">
+					<execute>picom</execute>
+				</action> </item>
+				<item label="Plank"> <action name="Execute">
+					<execute>plank</execute>
+				</action> </item>
+				<item label="Stacer"> <action name="Execute">
+					<execute>stacer</execute>
+				</action> </item>
+				<item label="Xarchiver"> <action name="Execute">
+					<execute>xarchiver</execute>
+				</action> </item>
+			</menu>
+		</menu>
 		<menu id="root-menu-104950" label="Power Options">
 			<item label="Lock">
 				<action name="Execute">
@@ -112,5 +527,5 @@
 				</action>
 			</item>
 		</menu>
-	</menu>
+        <separator/>
 </openbox_menu>

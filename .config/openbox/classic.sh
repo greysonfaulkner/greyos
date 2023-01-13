@@ -10,4 +10,5 @@ killall vala-panel
 tint2 &
 dunst -config /home/greyson/.config/dunst/taskbar &
 picom --experimental-backends &
-nitrogen --restore
+pcmanfm --desktop &
+#nitrogen --restore

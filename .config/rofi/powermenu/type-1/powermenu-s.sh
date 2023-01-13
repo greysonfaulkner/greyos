@@ -10,7 +10,7 @@
 ## style-1   style-2   style-3   style-4   style-5
 
 # Play Audio
-mpv --keep-open=no --no-video ~/.sounds/rofi.wav &
+mpv --keep-open=no --volume=100 --no-video ~/.sounds/rofi.wav &
 
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-1"

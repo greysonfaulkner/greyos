@@ -1,5 +1,5 @@
 [core-version-1]
-units=['c041bd04-d47f-4517-b1d4-4b1c8c4b473d', '87696e8b-f76f-4fbd-b7b1-f0b0e2ab8c47', 'toplevel1', 'd8bdc425-ce9c-4b90-ad90-dd64e990bba4', '0d73c0ae-3b7d-4c77-87ee-764a58492c6a', 'be04633d-1e9d-4142-9e39-bcf1d14ef923', 'b7001cb2-0a8b-40b8-87e3-c00dc8db2cf5', '8c748c1e-ad13-4977-9ba4-b729b60ec773', '3def0e1d-3e50-4de6-81ce-6859ca68c594']
+units=['87696e8b-f76f-4fbd-b7b1-f0b0e2ab8c47', 'toplevel1', 'd8bdc425-ce9c-4b90-ad90-dd64e990bba4', '0d73c0ae-3b7d-4c77-87ee-764a58492c6a', 'be04633d-1e9d-4142-9e39-bcf1d14ef923', 'b7001cb2-0a8b-40b8-87e3-c00dc8db2cf5', '8c748c1e-ad13-4977-9ba4-b729b60ec773', '3def0e1d-3e50-4de6-81ce-6859ca68c594']
 
 [global]
 is-dark=true
@@ -191,7 +191,7 @@ object-type='applet'
 plugin-type='org.valapanel.separator'
 toplevel-id='toplevel1'
 pack-type='end'
-position=2
+position=1
 show-separator=false
 size=6
 
@@ -261,13 +261,6 @@ bold-font=true
 [58f9be44-5f75-4be5-9f5e-8e3808532e42]
 
 [c041bd04-d47f-4517-b1d4-4b1c8c4b473d]
-object-type='applet'
-plugin-type='org.valapanel.separator'
-toplevel-id='toplevel1'
-pack-type='end'
-position=1
-size=6
-show-separator=false
 
 [8b6e520d-11d8-4ac2-909a-5f2a8c8c09a6]
 
@@ -276,3 +269,5 @@ show-separator=false
 [be14b08d-451f-4c51-877f-651cd9ede120]
 
 [a6663afa-8687-4040-a240-72cd52936252]
+
+[6119d71e-d738-412f-a8c7-83c649accb5d]

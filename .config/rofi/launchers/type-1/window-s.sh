@@ -15,7 +15,7 @@ dir="$HOME/.config/rofi/launchers/type-1"
 theme='style-8'
 
 ## Run
-mpv --keep-open=no --no-video ~/.sounds/rofi.wav &
+mpv --keep-open=no --volume=100 --no-video ~/.sounds/rofi.wav &
 rofi \
     -show window \
     -theme ${dir}/${theme}.rasi

@@ -6,31 +6,28 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=9;x=953;y=24"/>
-      <property name="size" type="uint" value="18"/>
+      <property name="position" type="string" value="p=8;x=960;y=1069"/>
+      <property name="size" type="uint" value="22"/>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="true"/>
+      <property name="position-locked" type="bool" value="false"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.156863"/>
         <value type="double" value="0.164691"/>
-        <value type="double" value="0.211765"/>
-        <value type="double" value="1.000000"/>
+        <value type="double" value="0.21176500000000001"/>
+        <value type="double" value="1"/>
       </property>
+      <property name="disable-struts" type="bool" value="false"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
-        <value type="int" value="8"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
-        <value type="int" value="6"/>
-        <value type="int" value="7"/>
       </property>
-      <property name="disable-struts" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -39,14 +36,12 @@
         <property name="never-confirm-history-clear" type="bool" value="true"/>
       </property>
     </property>
-    <property name="plugin-2" type="string" value="appmenu">
-      <property name="plugins" type="empty">
-        <property name="plugin-2" type="empty">
-          <property name="compact-mode" type="bool" value="false"/>
-          <property name="bold-application-name" type="bool" value="true"/>
-          <property name="expand" type="bool" value="false"/>
-        </property>
-      </property>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="archlinux-logo"/>
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="true"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -54,49 +49,14 @@
     </property>
     <property name="plugin-4" type="string" value="systray">
       <property name="known-legacy-items" type="array">
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (49%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (52%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (57%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (61%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (50%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (54%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (62%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (65%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (53%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (66%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (69%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (56%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (63%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (58%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (60%)"/>
-        <value type="string" value="wi-fi network connection “asus_58_5g 1” active: asus_58_5g (67%)"/>
-        <value type="string" value="blueberry-tray.py"/>
-        <value type="string" value="volumeicon"/>
+        <value type="string" value="artha"/>
         <value type="string" value="cbatticon"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="wi-fi network connection “asus_58_5g” active: asus_58_5g (72%)"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="volumeicon"/>
       </property>
-      <property name="known-items" type="array">
-        <value type="string" value="privateinternetaccess"/>
-      </property>
     </property>
-    <property name="plugin-5" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-6" type="string" value="clock">
-      <property name="digital-format" type="string" value="%l:%M %p"/>
-      <property name="timezone" type="string" value=""/>
-    </property>
-    <property name="plugin-7" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-8" type="string" value="windowmenu">
-      <property name="workspace-names" type="bool" value="true"/>
-      <property name="style" type="uint" value="1"/>
-      <property name="urgentcy-notification" type="bool" value="false"/>
-      <property name="workspace-actions" type="bool" value="false"/>
-      <property name="all-workspaces" type="bool" value="true"/>
-    </property>
-    <property name="plugin-1" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
+    <property name="plugin-5" type="string" value="clock"/>
   </property>
 </channel>

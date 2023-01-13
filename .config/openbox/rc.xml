@@ -25,7 +25,7 @@
   <!-- THEME -->
   <theme>
     <name>dracula-openbox</name>
-    <titleLayout>CMILDS</titleLayout>
+    <titleLayout>CMILSD</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -81,7 +81,7 @@
       <name>[9]</name>
       <name>[10]</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>600</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -120,12 +120,18 @@
         <to>left</to>
         <wrap>yes</wrap>
       </action>
+      <!-- <action name="Execute">
+        <command>nitrogen - -random - -set-scaled</command>
+      </action> -->
     </keybind>
     <keybind key="W-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>yes</wrap>
       </action>
+     <!-- <action name="Execute">
+        <command>nitrogen - -random - -set-scaled</command>
+      </action> -->
     </keybind>
     <keybind key="W-1">
       <action name="GoToDesktop">
@@ -250,6 +256,12 @@
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/close.wav</command>
       </action>
     </keybind>
+    <keybind key="S-W-c">
+      <action name="Kill"/>
+      <action name="Execute">
+        <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/close.wav</command>
+      </action>
+    </keybind>
     <keybind key="W-C-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -277,14 +289,14 @@
     <!-- WINDOW RESET -->
     <keybind key="W-space">
       <action name="ToggleMaximize"/>
-      <action name="ToggleDecorations"/>
+      <!-- <action name="ToggleDecorations"/> -->
       <action name="SendToLayer">
         <layer>nromals</layer>
       </action>
       <action name="MoveResizeTo">
         <x>center</x>
         <!-- <y>60</y> -->
-        <y>60</y>
+        <y>center</y>
         <height>80%</height>
         <width>70%</width>
       </action>
@@ -435,7 +447,7 @@
     </keybind>
     <keybind key="W-Tab">
       <action name="Execute">
-        <command>~/.config/rofi/launchers/type-1/window.sh</command>
+        <command>~/.config/rofi/launchers/type-1/window-o.sh</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -468,7 +480,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>kitty -e ranger ~/.config</command>
+        <command>alacritty -e ranger ~/.config</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -476,7 +488,7 @@
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>kitty -e ranger ~/Music/lofi-hip-hop-beats-to-study-and-relax-to</command>
+        <command>alacritty -e ranger ~/Music</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -484,7 +496,7 @@
     </keybind>
     <keybind key="W-c">
       <action name="Execute">
-        <command>kitty -e ranger ~/Documents/comics</command>
+        <command>alacritty -e ranger ~/Documents/comics</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -525,7 +537,7 @@
     </keybind>
     <keybind key="W-n">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -563,10 +575,27 @@
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
       </action>
     </keybind>
+    <keybind key="W-j">
+      <action name="Execute">
+        <command>rednotebook</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+        <command>com.github.geigi.cozy</command>
+      </action>
+      <action name="Execute">
+        <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
+      </action>
+    </keybind>
     <!-- ROFI -->
     <keybind key="C-space">
+      <!-- <keybind key="Super_L"> -->
       <action name="Execute">
-        <command>~/.config/rofi/launchers/type-1/drun.sh</command>
+        <command>~/.config/rofi/launchers/type-1/drun-o.sh</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -574,7 +603,7 @@
     </keybind>
     <keybind key="C-S-space">
       <action name="Execute">
-        <command>~/.config/rofi/launchers/type-1/run.sh</command>
+        <command>~/.config/rofi/launchers/type-1/run-o.sh</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -582,7 +611,7 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>~/.config/rofi/launchers/type-1/file.sh</command>
+        <command>~/.config/rofi/launchers/type-1/file-o.sh</command>
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/rofi.wav</command>
@@ -632,6 +661,11 @@
       </action>
       <action name="Execute">
         <command>mpv --keep-open=no --no-video --volume=75 ~/.sounds/select.wav</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
@@ -1013,7 +1047,7 @@
   <!-- WINDOW RULES -->
   <applications>
     <application type="normal">
-      <decor>no</decor>
+      <decor>yes</decor>
       <maximized>true</maximized>
     </application>
     <!--
@@ -1031,6 +1065,11 @@
     <application name="galculator">
       <decor>yes</decor>
       <maximized>false</maximized>
+      <position force="no">
+        <x>-30</x>
+        <y>30</y>
+      </position>
+      <layer>above</layer>
     </application>
     <application name="leafpad">
       <decor>yes</decor>

@@ -99,6 +99,13 @@ paru -S --noconfirm kvantum
 paru -S --noconfirm mutimarkdown
 paru -S --noconfirm cmatrix
 paru -S --noconfirm gtk3-classic
+paru -S --noconfirm unarchiever
+paru -S --noconfirm aspell-en
+paru -S --noconfirm pavucontrol
+paru -S --noconfirm ristretto
+paru -S --noconfirm trashman
+paru -S --noconfirm acpi
+paru -S --noconfirm trayer
 
 # Install Openbox and Basic Gui Tools
 echo "*******************************************************"
@@ -107,7 +114,6 @@ echo "*******************************************************"
 sleep 1
 sudo pacman -S --noconfirm openbox
 sudo pacman -S --noconfirm obconf
-sudo pacman -S --noconfirm nitrogen
 sudo pacman -S --noconfirm lxappearance
 sudo pacman -S --noconfirm lxrandr
 sudo pacman -S --noconfirm plank
@@ -136,11 +142,10 @@ paru -S --noconfirm audacity
 paru -S --noconfirm gimp
 paru -S --noconfirm kdenlive
 paru -S --noconfirm obs-studio
-paru -S --noconfirm discord
+paru -S --noconfirm discord-canary
 paru -S --noconfirm steam
 paru -S --noconfirm firefox
 paru -S --noconfirm mailspring
-paru -S --noconfirm manuskirpt
 paru -S --noconfirm stacer
 paru -S --noconfirm notepadqq
 paru -S --noconfirm alacritty
@@ -155,15 +160,16 @@ paru -S --noconfirm ranger
 paru -S --noconfirm feh
 paru -S --noconfirm inkscape
 paru -S --noconfirm mcomix
-paru -S --noconfirm thunar
+paru -S --noconfirm pcmanfm
 paru -S --noconfirm leafpad
+paru -S --noconfirm galculator
+paru -S --noconfirm pamac-nosnap
+paru -S --noconfirm font-manager
+paru -S --noconfirm grub-customizer
+paru -S --noconfirm android-file-transfer
+paru -S --noconfirm gparted
+paru -S --noconfirm chromium
 
-# Install Extra Programs
-echo "***********************************"
-echo "*****Installing Extra Programs*****"
-echo "***********************************"
-sleep 1
-paru -S --noconfirm xarchiver thunar-archive-plugin
 
 # Install Global Appmenu
 echo "***********************************"
