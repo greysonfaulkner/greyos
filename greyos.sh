@@ -116,12 +116,10 @@ sudo pacman -S --noconfirm openbox
 sudo pacman -S --noconfirm obconf
 sudo pacman -S --noconfirm lxappearance
 sudo pacman -S --noconfirm lxrandr
-sudo pacman -S --noconfirm plank
 sudo pacman -S --noconfirm network-manager-applet
 sudo pacman -S --noconfirm blueberry
 sudo pacman -S --noconfirm tint2
-sudo pacman -S --noconfirm vala-panel
-paru -S --noconfirm arcolinux-betterlockscreen
+paru -S --noconfirm betterlockscreen
 paru -S --noconfirm cbatticon
 paru -S --noconfirm volumeicon
 
@@ -144,7 +142,6 @@ paru -S --noconfirm kdenlive
 paru -S --noconfirm obs-studio
 paru -S --noconfirm discord-canary
 paru -S --noconfirm steam
-paru -S --noconfirm firefox
 paru -S --noconfirm mailspring
 paru -S --noconfirm stacer
 paru -S --noconfirm notepadqq
@@ -168,24 +165,7 @@ paru -S --noconfirm font-manager
 paru -S --noconfirm grub-customizer
 paru -S --noconfirm android-file-transfer
 paru -S --noconfirm gparted
-paru -S --noconfirm chromium
-
-
-# Install Global Appmenu
-echo "***********************************"
-echo "*****Installing Global Appmenu*****"
-echo "***********************************"
-sleep 1
-cd ~
-git clone https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
-cd vala-panel-appmenu
-mkdir ~/vala-panel-appmenu/global
-meson -Dxfce=enabled -Dvalapanel=enabled ~/vala-panel-appmenu/global
-cd ~/vala-panel-appmenu/global
-ninja && sudo ninja install
-cd ~/greyos
-paru -S --noconfirm vala-panel-applets-xembed-git
-rm -rf ~/vala-panel-appmenu
+paru -S --noconfirm brave-bin
 
 # Enabaling SDDM
 echo "************************"
@@ -210,18 +190,13 @@ sudo rm -rf ~/greyos/.themes
 sudo cp -r .icons/TokyoNight/ /usr/share/icons
 sudo rm -rf ~/greyos/.icons
 mv ascii/ ~
-mv wallpapers/ ~
-mv gifs/ ~
-mv .bashrc ~
-mv .zshrc ~
+mv wallpapers/ ~/Pictures
+mv gifs/ ~/Pictures
 rm -rf ~/.config
 mv .config/ ~
 mv .sounds/ ~
 mv .local/ ~
 mv .xinitrc ~
-mv rofi/ ~
-sudo rm -rf /usr/share/smplayer
-sudo mv smplayer/ /usr/share
 
 # Clean Up
 echo "***************************"
